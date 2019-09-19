@@ -42,6 +42,10 @@ html
 	width: 1080px
 	height: auto
 	margin: 0 auto
+.work-area_korrection
+	padding:
+		left: 70px
+		right: 70px
 .upper-container
 	left: calc((100% - 1080px)/2)
 	top: 0
@@ -286,7 +290,7 @@ html
 	display: flex
 	flex-wrap: nowrap
 	justify-content: space-between
-	bottom: 290px
+	bottom: calc(290px + 25px)
 .about-complex-slaider__arrow-right
 	margin:
 		right: 20px
@@ -365,6 +369,9 @@ html
 	flex-wrap: nowrap
 	margin:
 		bottom: 57px
+	padding:
+		left: 70px
+		right: 70px
 .attention-details__control-title, .attention-details__control-tabs
 	flex-basis: 50%
 	flex-shrink: 1
@@ -419,6 +426,10 @@ html
 	top: 35px
 	height: 4px
 
+.attention-details__advantages
+	padding:
+		left: 70px
+		right: 70px
 .attention-details__tab
 	display: flex
 	flex-wrap: wrap
@@ -435,7 +446,6 @@ html
 		bottom: 20px
 	height: 300px
 
-
 .first-block
 	width: 380px
 .second-tab__first-block
@@ -450,6 +460,34 @@ html
 	width: 300px
 .second-tab__third-block
 	background: url(../img/3block_03.jpg) no-repeat center
+	background-size: contain
+.fourth-block
+	width: 300px
+.second-tab__fourth-block
+	background: url(../img/3block_04.jpg) no-repeat center
+	background-size: contain
+.attention-details__block-link
+	display: block
+	text-decoration: none
+	font-family: Montserrat
+	font-size: 12px
+	font-weight: bold
+	font-style: normal
+	font-stretch: normal
+	line-height: 1.5
+	letter-spacing: normal
+	color: #01398e
+	margin:
+		top: 198px
+.fifth-block
+	width: 380px
+.second-tab__fifth-block
+	background: url(../img/3block_05.jpg) no-repeat center
+	background-size: contain
+.sixth-block
+	width: 220px
+.second-tab__sixth-block
+	background: url(../img/3block_06.jpg) no-repeat center
 	background-size: contain
 
 .attention-details__block-info
@@ -478,13 +516,314 @@ html
 	line-height: 1.14
 	letter-spacing: normal
 	color: #000000
-
 /* /attention-detail */
 
 /* thoughtful-planning */
+.thoughtful-planning
+	width: 100%
+	background-color: #f4e1d2
+	padding:
+		top: 83px
+		bottom: 36px
+
+.thoughtful-planning__title
+	font-family: Montserrat
+	font-size: 48px
+	font-weight: 800
+	font-style: normal
+	font-stretch: normal
+	line-height: 1.17
+	letter-spacing: normal
+	text-align: center
+	color: #000000
+	margin:
+		bottom: 35px
+.thoughtful-planning__description
+	font-family: Montserrat
+	font-size: 16px
+	font-weight: normal
+	font-style: normal
+	font-stretch: normal
+	line-height: 1.5
+	letter-spacing: normal
+	text-align: center
+	color: #000000
+	padding:
+		bottom: 60px
+		left: 70px + 132px
+		right: 70px + 132px
+
+.shahmatka__navigation-row
+	display: flex
+	flex-wrap: nowrap
+	margin:
+		left: 70px
+		right: 70px
+		bottom: 70px
+.navigation-row__up
+	border-bottom: solid 1px rgba(0, 0, 0, 0.28)
+.shahmatka__navigation-room, .shahmatka__navigation-class, .shahmatka__navigation-floor
+	flex-basis: 33.33333%
+	flex-shrink: 1
+	flex-grow: 0
+	margin:
+		bottom: 16px
+		top: 16px
+.navigation-row__name
+	font-family: Montserrat
+	font-size: 13px
+	font-weight: 500
+	font-style: normal
+	font-stretch: normal
+	line-height: normal
+	letter-spacing: 2px
+	text-align: center
+	color: #000000
+
+.navigation-row__control-button
+	width: 45px
+	height: 45px
+	border-radius: 50%
+	border: solid 1px #9b9b9b
+	background-color: transparent
+	font-family: Montserrat
+	font-size: 18px
+	font-weight: normal
+	font-style: normal
+	font-stretch: normal
+	line-height: 2.40 //2.78
+	letter-spacing: normal
+	text-align: center
+	color: #000000
+	margin:
+		left: 5px
+		right: 5px
+	transition: color 0.6s ease, background-color 0.6s ease
+.navigation-row__control-button.active, .navigation-row__control-button.hovered:hover
+	color: #ffffff
+	background-color: #000
+
+.navigation-row__class-control, .class-control__slaider
+	position: relative
+.class-control__control-arrows
+	position: absolute
+	width: 100%
+.slaide-word
+	font-family: Montserrat
+	font-size: 28px
+	font-weight: normal
+	font-style: normal
+	font-stretch: normal
+	line-height: normal
+	letter-spacing: normal
+	text-align: center
+	color: #000000
+.control-arrow__left
+	position: absolute
+	left: 0px
+	bottom: -6px
+	display: inline-block
+	content: '\3C'
+	font-size: 38px
+	color: #000000
+	margin:
+		left: 40px
+.control-arrow__right
+	display: inline-block
+	position: absolute
+	right: 0
+	bottom: -6px
+	font-size: 38px
+	margin:
+		right: 40px
+
+.shahmatka__planirovka
+	width: 700px
+	height: auto
+	margin: 0 auto
+.shahmatka__planirovka-image
+	width: 100%
+	height: height
+
+.shahmatka__download-pdf
+	width: 100%
+.shahmatka__download-link
+	display: inline-block
+	width: 100px
+	margin: 39px auto 0px calc(50% - 50px)
+	text-decoration: none
+	font-family: Montserrat
+	font-size: 14px
+	font-weight: 500
+	font-style: normal
+	font-stretch: normal
+	line-height: normal
+	letter-spacing: normal
+	text-align: center
+	color: #054aa7
 /* /thoughtful-planning */
 
 /* fine-finish */
+.fine-finish
+	width: 100%
+	background-color: #ffffff
+	padding:
+		top: 88px
+		bottom: 71px
+.fine-finish__info-title
+	font-family: Montserrat
+	font-size: 48px
+	font-weight: 800
+	font-style: normal
+	font-stretch: normal
+	line-height: 1.17
+	letter-spacing: normal
+	text-align: center
+	color: #000000
+	margin:
+		bottom: 35px
+.fine-finish__info-description
+	font-family: Montserrat
+	font-size: 16px
+	font-weight: normal
+	font-style: normal
+	font-stretch: normal
+	line-height: 1.5
+	letter-spacing: normal
+	text-align: center
+	color: #000000
+	margin:
+		bottom: 45px
+	padding: 
+		left: 70px+160px
+		right: 70px+160px
+
+.fine-finish__info-row
+	display: flex
+	flex-wrap: nowrap
+	padding:
+		left: 70px
+		right: 70px
+	margin:
+		left: -10px
+		right: -10px
+		bottom: 100px
+.fine-finish__info-wrap
+	padding:
+		left: 10px
+		right: 10px
+
+.fine-finish__info-message
+	height: 375px
+
+.first-message
+	width: 620px
+	background: url(../img/otdelka_1_2.jpg) no-repeat center
+	background-size: contain
+.second-message
+	width: 300px
+	background: url(../img/otdelka_1.jpg) no-repeat center
+	background-size: contain
+
+.info-message__block
+	padding: 32px 30px
+.info-message__title
+	font-family: Montserrat
+	font-size: 28px
+	font-weight: 800
+	font-style: normal
+	font-stretch: normal
+	line-height: 1.36
+	letter-spacing: normal
+	color: #000000
+	margin:
+		bottom: 20px
+
+.info-message__list-wrap
+	display: flex
+	flex-wrap: nowrap
+	margin:
+		left: -15px
+		right: -15px
+.info-message__item-wrap
+	margin:
+		left: 15px
+		right: 15px
+
+.info-message__list-item
+	margin:
+		bottom: 16px
+.info-message__item-title
+	font-family: Montserrat
+	font-size: 15px
+	font-weight: bold
+	font-style: normal
+	font-stretch: normal
+	line-height: normal
+	letter-spacing: normal
+	color: #000000
+	margin:
+		bottom: 6px
+.info-message__item-sub-title
+	font-family: Montserrat
+	font-size: 14px
+	font-weight: normal
+	font-style: normal
+	font-stretch: normal
+	line-height: 1.14
+	letter-spacing: normal
+	color: #000000
+
+.fine-finish__question-row
+	display: flex
+	flex-wrap: nowrap
+	margin:
+		top: 60px
+.question-block__left
+	flex-basis: 66.66666%
+	flex-shrink: 1
+	flex-grow: 0
+.question-block__right
+	flex-basis: 33.33333%
+	flex-shrink: 1
+	flex-grow: 0
+	display: flex
+	justify-content: flex-end
+	align-items: flex-end
+
+.fine-finish__question-title
+	font-family: Montserrat
+	font-size: 34px
+	font-weight: 800
+	font-style: normal
+	font-stretch: normal
+	line-height: 1.12
+	letter-spacing: normal
+	color: #000000
+.fine-finish__question-sub-title
+	font-family: Montserrat
+	font-size: 16px
+	font-weight: normal
+	font-style: normal
+	font-stretch: normal
+	line-height: 1.5
+	letter-spacing: normal
+	color: #000000
+.fine-finish__question-button
+	font-family: Montserrat
+	font-size: 12px
+	font-weight: bold
+	font-style: normal
+	font-stretch: normal
+	line-height: normal
+	letter-spacing: 1px
+	text-align: center
+	color: #ffffff
+	border-radius: 25px
+	background-color: #c59b6e
+	width: 200px
+	height: 50px
+	text-transform: uppercase
 /* /fine-finish */
 
 /* project-news */
