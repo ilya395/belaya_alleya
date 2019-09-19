@@ -10,6 +10,8 @@ html
 .main-container
 	width: 100%
 	margin: 0 auto
+// a
+// 	text-decoration: none
 
 /* /simple */
 
@@ -113,6 +115,7 @@ html
 	color: #ffffff
 	margin:
 		right: 70px
+	text-decoration: underline
 
 .header-middle-line
 	// width: 100%
@@ -369,9 +372,6 @@ html
 	flex-wrap: nowrap
 	margin:
 		bottom: 57px
-	padding:
-		left: 70px
-		right: 70px
 .attention-details__control-title, .attention-details__control-tabs
 	flex-basis: 50%
 	flex-shrink: 1
@@ -448,21 +448,33 @@ html
 
 .first-block
 	width: 380px
+.first-tab__first-block
+	background: url(../img/3block2_01.jpg) no-repeat center
+	background-size: contain
 .second-tab__first-block
 	background: url(../img/3block_01.jpg) no-repeat center
 	background-size: contain
 .second-block
 	width: 220px
+.first-tab__second-block
+	background: url(../img/3block2_02.jpg) no-repeat center
+	background-size: contain
 .second-tab__second-block
 	background: url(../img/3block_02.jpg) no-repeat center
 	background-size: contain
 .third-block
 	width: 300px
+.first-tab__third-block
+	background: url(../img/3block2_03.jpg) no-repeat center
+	background-size: contain
 .second-tab__third-block
 	background: url(../img/3block_03.jpg) no-repeat center
 	background-size: contain
 .fourth-block
 	width: 300px
+.first-tab__fourth-block
+	background: url(../img/3block2_04.jpg) no-repeat center
+	background-size: contain
 .second-tab__fourth-block
 	background: url(../img/3block_04.jpg) no-repeat center
 	background-size: contain
@@ -481,14 +493,22 @@ html
 		top: 198px
 .fifth-block
 	width: 380px
+.first-tab__fifth-block
+	background: url(../img/3block2_05.jpg) no-repeat center
+	background-size: contain
 .second-tab__fifth-block
 	background: url(../img/3block_05.jpg) no-repeat center
 	background-size: contain
 .sixth-block
 	width: 220px
+.first-tab__sixth-block
+	background: url(../img/3block2_06.jpg) no-repeat center
+	background-size: contain
 .second-tab__sixth-block
 	background: url(../img/3block_06.jpg) no-repeat center
 	background-size: contain
+.block-title_white
+	color: #fff
 
 .attention-details__block-info
 	padding:
@@ -809,7 +829,7 @@ html
 	line-height: 1.5
 	letter-spacing: normal
 	color: #000000
-.fine-finish__question-button
+.fine-finish__question-link
 	font-family: Montserrat
 	font-size: 12px
 	font-weight: bold
@@ -828,7 +848,7 @@ html
 		top: 17px
 	text-transform: uppercase
 	transition: background-color 0.6s ease, color 0.6s ease, border 0.6s ease
-.fine-finish__question-button:hover
+.fine-finish__question-link:hover
 	background-color: transparent
 	color: #c59b6e
 	border: 1px solid #c59b6e
@@ -914,9 +934,9 @@ html
 	letter-spacing: 0.5px
 	color: #000000
 
-.project-news__news-link
-	text-align: center
 .project-news__news-button
+	text-align: center
+.project-news__news-link
 	display: block
 	width: 200px
 	height: calc(50px - 17px)
@@ -938,30 +958,473 @@ html
 	padding:
 		top: 17px
 	transition: background-color 0.6s ease, color 0.6s ease, border 0.6s ease
-.project-news__news-button:hover
+.project-news__news-link:hover
 	background-color: #fff
 	color: #1e3751
 	border: 1px solid #1e3751
-
-
 /* /project-news */
 
 /* stock */
+.stock
+	width: 100%
+	padding:
+		top: 82px
+		bottom: 100px
+	background-color: #fff
+.stock__title
+	font-family: Montserrat
+	font-size: 48px
+	font-weight: 800
+	font-style: normal
+	font-stretch: normal
+	line-height: 1.17
+	letter-spacing: normal
+	text-align: center
+	color: #000000
+	margin:
+		bottom: 52px
+
+.stock__slaider
+	position: relative
+.stock__slaider-list
+	display: flex
+	flex-wrap: nowrap
+	position: relative
+	margin:
+		left: -10px
+		right: -10px
+.stock__slaid
+	flex-basis: 50%
+	flex-shrink: 1
+	flex-grow: 0
+	margin:
+		left: 10px
+		right: 10px
+	height: 325px
+	width: 460px
+	border-radius: 5px
+
+.stock__slaid-link
+	display: block
+	text-decoration: none
+	position: relative
+.stock__slaid-image
+	width: 100%
+	height: 100%
+	position: relative
+
+.stock__slaid-info
+	position: absolute
+	top: 28px
+	left: 30px
+
+.stock__slaid-title
+	font-family: Montserrat
+	font-size: 28px
+	font-weight: 800
+	font-style: normal
+	font-stretch: normal
+	line-height: normal
+	letter-spacing: normal
+	color: #000000
+	text-decoration: none
+	margin:
+		bottom: 4px
+.stock__slaid-sub-title
+	font-family: Montserrat
+	font-size: 18px
+	font-weight: 500
+	font-style: normal
+	font-stretch: normal
+	line-height: normal
+	letter-spacing: normal
+	color: #000000
+	text-decoration: none
+	margin:
+		bottom: 200px
+.stock__slaid-date
+	font-family: Montserrat
+	font-size: 12px
+	font-weight: bold
+	font-style: normal
+	font-stretch: normal
+	line-height: normal
+	letter-spacing: 0.5px
+	color: #000000
+	text-decoration: none
+
+.stock__slaider-control
+	position: relative
+	width: 100%
+.stock__control-arrows
+	display: flex
+	flex-wrap: nowrap
+	position: absolute
+	width: 100%
+	bottom: calc(162px + 40px)
+.stock-arrow__left
+	left: 0px
+	margin:
+		left: -40px
+.stock-arrow__right
+	right: 0px
+	margin:
+		right: -40px
+.stock__control-arrow
+	display: inline-block
+	position: absolute
+	font-size: 60px
+
+.stock__button
+	margin: 
+		top: 60px
+.stock__link
+	display: block
+	width: 200px
+	height: calc(50px - 17px)
+	border-radius: 25px
+	border: solid 1px #1e3751
+	background-color: transparent
+	font-family: Montserrat
+	font-size: 12px
+	font-weight: bold
+	font-style: normal
+	font-stretch: normal
+	line-height: normal
+	letter-spacing: 1px
+	text-align: center
+	color: #1e3751
+	text-transform: uppercase
+	text-decoration: none
+	margin: 0 auto
+	padding:
+		top: 17px
+	transition: background-color 0.6s ease, color 0.6s ease, border 0.6s ease
+.stock__link:hover
+	background-color: #1e3751
+	color: #fff
+	border: 1px solid #fff
 /* /stock */
 
 /* general-plan */
+.general-plan__tour
+	padding:
+		top: 60px
+		bottom: 71px
+	background-color: #fff
 /* /general-plan */
 
 /* construction-progress */
+.construction-progress__block
+	display: flex
+	flex-wrap: nowrap
+	margin:
+		bottom: 60px
+
+.construction-progress__note-list
+	flex-basis: 540px
+	flex-shrink: 1
+	flex-grow: 0
+	position: relative
+.construction-progress__slade
+	width: 100%
+	height: 376px
+	overflow: hidden
+.construction-progress__slade-image
+	width: 540px
+	height: 376px
+	object-fit: cover
+
+.construction-progress__note-control
+	position: absolute
+	display: flex
+	flex-wrap: nowrap
+	width: 100%
+	bottom: calc(163px + 0px)
+.construction-progress__control-arrow
+	position: absolute
+.note-control__left
+	left: 0px
+.note-control__right
+	right: 0px
+.construction-progress__arrow-left, .onstruction-progress__arrow-right
+	width: 100%
+	height: auto
+
+.construction-progress__note-data
+	flex-basis: 400px
+	flex-shrink: 1
+	flex-grow: 0
+	background-color: #fff
+	padding:
+		top: 21px
+		right: 20px
+		bottom: 32px
+		left: 40px
+.construction-progress__select-bar, .construction-progress__selectric
+	position: relative
+.construction-progress__selectric, .select-bar__item
+	width: 300px
+	// height: 45px
+	border: solid 1px #cdcdcd
+	background-color: #ffffff
+	padding:
+		top: 13px
+		left: 11px
+		bottom: 13px
+		right: 11px
+	display: flex
+	flex-wrap: nowrap
+	justify-content: space-between
+.selectric-arrow
+	display: inline-block
+	font-size: 14px
+	transform-origin: 50% 50%
+	transform: rotate(90deg)
+	transition: transform 0.8s ease
+.selectric__label, .select-bar__item
+	display: block
+	font-family: Montserrat
+	font-size: 16px
+	font-weight: normal
+	font-style: normal
+	font-stretch: normal
+	line-height: normal
+	letter-spacing: normal
+	color: #1e3751
+.construction-progress__selectric:hover
+	border: solid 1px #c4c4c4
+.construction-progress__selectric.selectric-open .selectric-arrow
+	transform: rotate(-90deg)
+
+.construction-progress__select-list
+	position: absolute
+	box-shadow: 0 0 10px -6px
+	display: none
+.construction-progress__select-list.selectric-items
+	display: block
+.select-list__wrap .select-bar__item
+	list-style-type: none
+.select-list__wrap
+	padding: 0
+	margin: 0
+.select-bar__item
+	transition: background-color 0.6s ease
+.select-bar__item:hover
+	background-color: #f2f2f2
+
+.construction-progress__info-bar
+	margin:
+		top: 30px
+	height: 248px
+	overflow: auto
+.construction-progress__info-wrap
+	margin:
+		right: 30px
 /* /construction-progress */
 
 /* location */
+.location, .infrastructure
+	width: 100%
+	padding:
+		top: 100px
+		bottom: 50px
+	background-color: #f4e1d2
+.location__description
+	margin:
+		left: 80px
+		right: 80px
+.location__title
+	font-family: Montserrat
+	font-size: 48px
+	font-weight: 800
+	font-style: normal
+	font-stretch: normal
+	line-height: 1.17
+	letter-spacing: normal
+	text-align: center
+	color: #000000
+	margin:
+		bottom: 22px
+.location__description
+	margin:
+		bottom: 60px
+.location__description-paragraph
+	font-family: Montserrat
+	font-size: 16px
+	font-weight: normal
+	font-style: normal
+	font-stretch: normal
+	line-height: 1.5
+	letter-spacing: normal
+	text-align: center
+	color: #000000
+.location__image
+	width: 940px
+	height: 505px
 /* /location */
 
 /* infrastructure */
+.infrastructure
+	padding:
+		top: 50px
+		bottom: 0px
+.infrastructure__buttons
+	margin:
+		left: 80px
+		right: 80px
+		bottom: 32px 
+.infrastructure__buttons-wrap
+	display: flex
+	flex-wrap: nowrap
+	justify-content: space-between
+	margin:
+		left: 30px
+		right: 30px
+.infrastructure__button
+	border-radius: 20px
+	border: solid 1px #b7b7b7
+	height: 40px
+	font-family: Montserrat
+	font-size: 14px
+	font-weight: normal
+	font-style: normal
+	font-stretch: normal
+	line-height: 1.71
+	letter-spacing: 1px
+	text-align: center
+	color: #000000
+	background-color: transparent
+	padding:
+		left: 20px
+		right: 20px
+	transition: color 0.6s ease, background-color 0.6s ease, border 0.6s ease
+.infrastructure__button.active, .infrastructure__button:hover
+	color: #fff
+	background-color: #1e3751
+	border: solid 1px #1e3751
+
+.infrastructure__map
+	width: 100%
+	height: 480px
+	background-color: #fff
 /* /infrastructure */
 
+/* main-form */
+.main-form
+	width: 100%
+	background-color: #142b42
+	padding:
+		top: 94px
+		bottom: 130px
+.main-form__title
+	font-family: Montserrat
+	font-size: 34px
+	font-weight: bold
+	font-style: normal
+	font-stretch: normal
+	line-height: normal
+	letter-spacing: normal
+	text-align: center
+	color: #ffffff
+	margin:
+		left: 80px
+		right: 80px
+		bottom: 65px 
+
+.main-form__form
+	width: 276px
+	margin: 0 auto
+	position: relative
+.main-form__line-wrap
+	width: 100%
+	margin:
+		bottom: 20px
+.main-form__phone
+	width: 100%
+	font-family: Montserrat
+	font-size: 14px
+	font-weight: normal
+	font-style: normal
+	font-stretch: normal
+	line-height: 1.71
+	letter-spacing: 2.63px
+	text-align: center
+	color: #ffffff
+	border-style: none none solid
+	border-bottom-width: 2px
+	border-bottom-color: #c59b6e
+	background-color: transparent
+	padding:
+		top: 9px
+		bottom: 9px
+	text-transform: uppercase
+
+.main-form__agreement
+	margin:
+		bottom: 36px
+.agreement__check-box-text
+	position: relative
+.agreement__check-box-text, .agreement__warn
+	font-family: Montserrat
+	font-size: 10px
+	font-weight: normal
+	font-style: normal
+	font-stretch: normal
+	line-height: normal
+	letter-spacing: normal
+	color: #9b9b9b
+	margin-left: 32px
+.agreement__check-box-text
+	cursor: pointer
+
+input[type=checkbox].agreement__check-box
+	display: none
+.agreement__check-box-text:before
+	content: ""
+	display: inline-block
+	position: absolute
+	width: 16px
+	height: 16px
+	border-radius: 1px
+	background-color: #f1f1f1
+	top: 8px
+	left: -32px
+input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:before
+	content: "\2714"
+	color: #211f29
+	font-size: 17px
+	text-align: center
+	vertical-align: middle
+	line-height: 16px
+
+.main-form__button
+	border-radius: 25px
+	background-color: #c59b6e
+	font-family: Montserrat
+	font-size: 12px
+	font-weight: bold
+	font-style: normal
+	font-stretch: normal
+	line-height: normal
+	letter-spacing: 1px
+	text-align: center
+	color: #ffffff
+	width: 220px
+	height: 50px
+	text-transform: uppercase
+	margin: 0 auto
+	display: block
+	border: 1px solid #c59b6e
+	transition: border 0.6s ease, background-color 0.6s ease, color 0.6s ease
+.main-form__button:hover
+	border: 1px solid #c59b6e
+	background-color: transparent
+	color: #c59b6e
+/* /main-form */
+
 /* call-back */
+
 /* /call-back */
 
 
