@@ -52,7 +52,7 @@ html
 	position: absolute
 
 .header-up-line
-	width: 100%
+	// width: 100%
 	display: flex
 	flex-wrap: nowrap
 	margin:
@@ -115,7 +115,7 @@ html
 		right: 70px
 
 .header-middle-line
-	width: 100%
+	// width: 100%
 	top: 45vh
 	position: absolute
 .header-middle-line__title
@@ -176,7 +176,7 @@ html
 		right: auto
 	background-color: #1e3751
 .header-low-line
-	width: 100%
+	// width: 100%
 	display: flex
 	flex-wrap: nowrap
 	// position: absolute
@@ -822,11 +822,128 @@ html
 	border-radius: 25px
 	background-color: #c59b6e
 	width: 200px
-	height: 50px
+	height: calc(50px - 17px)
+	text-decoration: none
+	padding:
+		top: 17px
 	text-transform: uppercase
+	transition: background-color 0.6s ease, color 0.6s ease, border 0.6s ease
+.fine-finish__question-button:hover
+	background-color: transparent
+	color: #c59b6e
+	border: 1px solid #c59b6e
 /* /fine-finish */
 
 /* project-news */
+.project-news
+	width: 100%
+	background-color: #1e3751
+	padding:
+		top: 82px
+		bottom: 100px
+.project-news__title
+	font-family: Montserrat
+	font-size: 48px
+	font-weight: 800
+	font-style: normal
+	font-stretch: normal
+	line-height: 1.17
+	letter-spacing: normal
+	text-align: center
+	color: #ffffff
+	margin:
+		bottom: 52px
+.project-news__list-news
+	display: flex
+	flex-wrap: nowrap
+	padding:
+		left: 70px
+		right: 70px
+	margin: 
+		left: -10px
+		right: -10px
+		bottom: 60px
+.project-news__news-item
+	flex-basis: 33.33333%
+	flex-shrink: 1
+	flex-grow: 0
+	height: 325px
+	margin:
+		left: 10px
+		right: 10px
+	border-radius: 5px
+	background-color: #ffffff
+.project-news__item-wrap
+	padding:
+		top: 32px
+		right: 23px
+		bottom: 21px
+		left: 30px
+	display: block
+	text-decoration: none
+
+.project-news__new-title
+	font-family: Montserrat
+	font-size: 16px
+	font-weight: bold
+	font-style: normal
+	font-stretch: normal
+	line-height: 1.25
+	letter-spacing: normal
+	color: #000000
+	margin:
+		bottom: 45px
+.project-news__new-description
+	font-family: Montserrat
+	font-size: 16px
+	font-weight: normal
+	font-style: normal
+	font-stretch: normal
+	line-height: 1.5
+	letter-spacing: normal
+	color: #000000
+	margin:
+		bottom: 76px
+.project-news__new-date
+	font-family: Montserrat
+	font-size: 12px
+	font-weight: bold
+	font-style: normal
+	font-stretch: normal
+	line-height: normal
+	letter-spacing: 0.5px
+	color: #000000
+
+.project-news__news-link
+	text-align: center
+.project-news__news-button
+	display: block
+	width: 200px
+	height: calc(50px - 17px)
+	border-radius: 25px
+	border: solid 1px #ffffff
+	background-color: transparent
+	font-family: Montserrat
+	font-size: 12px
+	font-weight: bold
+	font-style: normal
+	font-stretch: normal
+	line-height: normal
+	letter-spacing: 1px
+	text-align: center
+	color: #ffffff
+	text-transform: uppercase
+	text-decoration: none
+	margin: 0 auto
+	padding:
+		top: 17px
+	transition: background-color 0.6s ease, color 0.6s ease, border 0.6s ease
+.project-news__news-button:hover
+	background-color: #fff
+	color: #1e3751
+	border: 1px solid #1e3751
+
+
 /* /project-news */
 
 /* stock */
