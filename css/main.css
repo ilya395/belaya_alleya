@@ -1552,7 +1552,15 @@ html {
   overflow: auto; }
 
 .construction-progress__info-wrap {
-  margin-right: 30px; }
+  margin-right: 30px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #000000; }
 
 /* /construction-progress */
 /* location */
@@ -1773,4 +1781,122 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 
 /* /main-form */
 /* call-back */
+.call-back {
+  width: 100%;
+  background-color: #142b42;
+  padding-top: 33px;
+  padding-bottom: 82px;
+  margin-top: -1px; }
+
+.call-back__wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  position: relative; }
+
+.call-back__block {
+  -webkit-flex-basis: 33.33333%;
+      -ms-flex-preferred-size: 33.33333%;
+          flex-basis: 33.33333%;
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0; }
+
+.call-back__office-info {
+  padding-left: 54px; }
+
+.call-back__social {
+  padding-left: 94px; }
+
+.call-back__office-title, .call-back__office-description {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  margin-bottom: 10px; }
+
+.call-back__office-title {
+  font-weight: bold; }
+
+.call-back__social {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  margin-bottom: 12px; }
+
+.call-back__social-name {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  margin-left: 20px;
+  text-decoration: none; }
+
+.call-back__social-icon {
+  width: 25px;
+  height: 25px; }
+
+.social-icon__image {
+  width: 16px;
+  height: 16px;
+  background-color: #071e35;
+  border: 1px solid #071e35;
+  border-radius: 50%;
+  padding: 3px; }
+
+.call-back__social-icon.facebook .social-icon__image {
+  width: 14px;
+  height: 14px; }
+
+.call-back__info {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #9b9b9b;
+  margin-top: 57px;
+  margin-left: 220px;
+  margin-right: 220px; }
+
+.line-column {
+  position: relative; }
+
+.line-column:after, .line-column:before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 115px;
+  background-color: #979797; }
+
+.line-column:after {
+  right: -50px;
+  top: 0px; }
+
+.line-column:before {
+  left: 0; }
+
 /* /call-back */
