@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="34px" viewBox="0 0 34 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>icn_parking</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="БА_Главная" transform="translate(-1072.000000, -7498.000000)">
+            <g id="genplan" transform="translate(0.000000, 6671.000000)">
+                <g id="icn_parking" transform="translate(1072.000000, 827.000000)">
+                    <rect id="Rectangle" fill="#1C70D3" fill-rule="nonzero" x="0" y="0" width="34" height="34" rx="7"></rect>
+                    <rect id="Rectangle" stroke="#FFFFFF" fill-rule="nonzero" x="2.44285714" y="2.44285714" width="29.1142857" height="29.1142857" rx="6"></rect>
+                    <text id="Р" font-family="Montserrat-Bold, Montserrat" font-size="26" font-weight="bold" fill="#FFFFFF">
+                        <tspan x="8.07371429" y="29.0190476">Р</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

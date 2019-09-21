@@ -10,8 +10,25 @@ html
 .main-container
 	width: 100%
 	margin: 0 auto
-// a
-// 	text-decoration: none
+
+#before-load
+	width: 100%
+	height: 100%
+	background-color: #142b42
+	position: fixed
+	z-index: 90
+#before-load.not-visible
+	display: none
+#before-load i
+	width: 128px /*ширина gif-изображения*/
+	height: 128px /*высота gif-изображения*/
+	position: absolute
+	left: 50%
+	top: 50%
+	background: url('../img/25.gif') no-repeat 50% 50% /*расположение (url) изображения gif и др. параметры*/
+	margin: -35px 0 0 -35px
+	// z-index: 91
+
 
 /* /simple */
 
@@ -26,19 +43,42 @@ html
 .upper-slaider__container
 	width: 100%
 	// max-height: 828px
-	// height: calc(100% - 106px)
-	height: auto
+	// height: calc(100vh - 106px)
+	// height: auto
+	height: 100vh
 	position: relative
 	margin:
 		bottom: -4px
+	background-color: #1e3751
+.upper-slaider__slaides-list
+	width: 100%
+	height: calc(100vh - 95px)
+	// height: 100%
+	position: relative
+	overflow: hidden
 .upper-slaider__slaide
 	width: 100%
-	height: auto
+	height: 100%
 	position: relative
+	display: none
+.upper-slaider__slaide.active
+	display: block
+.upper-first-slaide
+	background: url(../img/main_pic_1.jpg) no-repeat center
+	background-size: cover
+.upper-second-slaide
+	background: url(../img/main_pic_2.jpg) no-repeat center
+	background-size: cover
+.upper-third-slaide
+	background: url(../img/main_pic_3.jpg) no-repeat center
+	background-size: cover
 .upper-slaider__slaide-image
 	width: 100%
 	height: auto
+	// max-height: 828px
 	position: relative
+	object-fit: cover//contain
+	object-position: bottom left
 
 .work-area
 	width: 1080px
@@ -67,10 +107,21 @@ html
 	display: flex
 	flex-wrap: nowrap
 	justify-content: flex-start
-.header-menu__icon-image
-	margin:
-		left: 70px
+	align-items: center
+	height: 21px
+	// padding:
+	// 	left: 70px
+// .header-menu__wrap
+// 	display: block
+// 	width: 100%
+.header-menu__icon
+	display: inline-block
+	position: relative
+.header-menu__icon.active
+	position: absolute
+	z-index: 81
 .header-menu__word
+	display: inline-block
 	font-family: GothamPro
 	font-size: 18px
 	font-weight: bold
@@ -103,7 +154,7 @@ html
 	margin:
 		right: 70px
 .header-phones__callback-link
-	display: block
+	display: inline-block
 	font-family: Montserrat
 	font-size: 14px
 	font-weight: normal
@@ -119,7 +170,7 @@ html
 
 .header-middle-line
 	// width: 100%
-	top: 45vh
+	top: calc(50vh - 150px)
 	position: absolute
 .header-middle-line__title
 .header-middle-line__title_main
@@ -171,7 +222,7 @@ html
 	color: #ffffff
 
 .details-upper-row
-	width: 100%
+	// width: 100%
 	padding:
 		top: 22px
 		bottom: 24px 
@@ -281,6 +332,13 @@ html
 	position: relative
 .about-complex-slaider__container
 	position: relative
+.about-complex-slaider__slaide
+	display: none
+	opacity: 0
+	transition: opacity 0.6s ease
+.about-complex-slaider__slaide.active
+	display: block
+	opacity: 1
 .about-complex-slaider__slaide-image
 	width: 100%
 	height: auto
@@ -297,9 +355,11 @@ html
 .about-complex-slaider__arrow-right
 	margin:
 		right: 20px
+	cursor: pointer
 .about-complex-slaider__arrow-left
 	margin:
 		left: 20px
+	cursor: pointer
 
 .about-complex-slaider__control-buttoms
 	width: 100%
@@ -319,6 +379,7 @@ html
 		top: 20px
 		bottom: 20px
 	transition: background-color 0.6s ease
+	cursor: pointer
 .about-complex-slaider__control-buttom.active
 	background-color: #1e3751
 
@@ -367,16 +428,16 @@ html
 		top: 100px
 		bottom: 132px
 	background-color: #1e3751
-.attention-details__control
+.attention-details__control, .general-plan__control
 	display: flex
 	flex-wrap: nowrap
 	margin:
 		bottom: 57px
-.attention-details__control-title, .attention-details__control-tabs
+.attention-details__control-title, .attention-details__control-tabs, .general-plan__control-title, .general-plan__control-tabs
 	flex-basis: 50%
 	flex-shrink: 1
 	flex-grow: 0
-.attention-details__control-title
+.attention-details__control-title, .general-plan__control-title
 	font-family: Montserrat
 	font-size: 24px
 	font-weight: bold
@@ -385,15 +446,15 @@ html
 	line-height: 1.42
 	letter-spacing: normal
 	color: #ffffff
-.attention-details__control-tabs
+.attention-details__control-tabs, .general-plan__control-tabs
 	display: flex
 	flex-wrap: nowrap
 	justify-content: flex-end
 	// position: relative
 .control-tab_left
-	padding:
-		right: 36px
-.attention-details__control-tab
+	// padding:
+	// 	right: 36px
+.attention-details__control-tab, .general-plan__control-tab
 	font-family: Montserrat
 	font-size: 16px
 	font-weight: normal
@@ -401,10 +462,21 @@ html
 	font-stretch: normal
 	line-height: normal
 	letter-spacing: normal
-	text-align: center
+	text-align: left
 	color: #ffffff
 	position: relative
-.attention-details__control-tab:after
+	cursor: pointer
+	// padding:
+	// 	left: 8px
+.attention-details__control-tab.control-tab_left, .general-plan__control-tab.control-tab_left
+	flex-basis: 135px
+	flex-shrink: 1
+	flex-grow: 0
+.attention-details__control-tab.control-tab_right, .general-plan__control-tab.control-tab_right
+	flex-basis: 180px
+	flex-shrink: 1
+	flex-grow: 0
+.attention-details__control-tab:after, .general-plan__control-tab:after
 	content: " "
 	position: absolute
 	background-color: #ffffff
@@ -412,7 +484,7 @@ html
 	width: 100%
 	top: 39px
 	left: 0px
-.attention-details__control-tab.active
+.attention-details__control-tab.active, .general-plan__control-tab.active
 	font-family: Montserrat
 	font-size: 16px
 	font-weight: bold
@@ -420,10 +492,12 @@ html
 	font-stretch: normal
 	line-height: normal
 	letter-spacing: normal
-	text-align: center
+	text-align: left
 	color: #ffffff
-.attention-details__control-tab.active:after
-	top: 35px
+	padding:
+		left: 0px
+.attention-details__control-tab.active:after, .general-plan__control-tab.active:after
+	top: 36px
 	height: 4px
 
 .attention-details__advantages
@@ -431,11 +505,13 @@ html
 		left: 70px
 		right: 70px
 .attention-details__tab
-	display: flex
+	display: none
 	flex-wrap: wrap
 	margin:
 		left: -10px
 		right: -10px
+.attention-details__tab.active
+	display: flex
 .attention-details__block-wrap
 	padding:
 		left: 10px
@@ -507,7 +583,7 @@ html
 .second-tab__sixth-block
 	background: url(../img/3block_06.jpg) no-repeat center
 	background-size: contain
-.block-title_white
+.attention-details__block-title.block-title_white
 	color: #fff
 
 .attention-details__block-info
@@ -1107,11 +1183,82 @@ html
 /* /stock */
 
 /* general-plan */
+.general-plan
+	width: 100%
+.general-plan__wrapper
+	background-color: #1e3751
+.general-plan__control
+	margin:
+		bottom: 0
+	padding:
+		top: 28px
+		bottom: 22px
+.general-plan__control-tab.control-tab_right
+	flex-basis: 116px
+	text-align: right
+.general-plan__control-tab.control-tab_left
+	flex-basis: 146px
+
 .general-plan__tour
 	padding:
-		top: 60px
 		bottom: 71px
 	background-color: #fff
+
+.general-plan__for-watching
+	width: 100%
+	height: calc(100vh - 84px - 84px)
+.general-plan__slaide
+	display: none 
+	width: 100%
+	height: 100%
+.general-plan__slaide.active
+	display: block
+.general-plan__first-stage
+	background: url(../img/gp_01.jpg) no-repeat center
+	background-size: cover
+	background-position: 50% 0
+.general-plan__all-houses
+	background: url(../img/gp_02.jpg) no-repeat center
+	background-size: cover
+	background-position: 50% 0
+
+.general-plan__list-objects
+	background-color: #f1f1f1
+	padding:
+		top: 23px
+		bottom: 23px
+.list-objects__list
+	display: flex
+	flex-wrap: nowrap
+	margin:
+		left: -10px
+		right: -10px
+.list-objects__item
+	flex-basis: 15%
+	flex-shrink: 1
+	flex-grow: 0
+	display: flex
+	flex-wrap: nowrap
+	margin:
+		left: 10px
+		right: 10px
+.list-objects__item.middle
+	flex-basis: 19%
+.list-objects__item.long
+	flex-basis: auto
+	flex-grow: 0
+.list-objects__item-title
+	font-family: Montserrat
+	font-size: 14px
+	font-weight: normal
+	font-style: normal
+	font-stretch: normal
+	line-height: normal
+	letter-spacing: normal
+	color: #000000
+	padding:
+		top: 10px
+		left: 5px
 /* /general-plan */
 
 /* construction-progress */
@@ -1535,8 +1682,123 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 	top: 0px
 .line-column:before
 	left: 0
-
-
 /* /call-back */
+
+/* main-menu */
+.modal-menu
+	display: none
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: 80
+	background-color: #1e3751
+.modal-menu__outside
+	margin: auto
+.modal-menu .work-area
+	height: 100%
+
+.modal-menu__wrapper
+	margin: auto 0
+	padding:
+		top: 18px
+.modal-menu.active
+	display: block
+.modal-menu__header
+	display: flex
+	flex-wrap: nowrap
+.modal-menu__header-block
+	flex-basis: 33.33333%
+	flex-shrink: 1
+	flex-grow: 0
+.modal-menu__header-block.phone
+	display: flex
+	flex-wrap: nowrap
+	flex-direction: column
+	justify-content: flex-start
+.modal-menu__header-block.phone .header-phones__number, .modal-menu__header-block.phone .header-phones__callback-link
+	margin-right: 0px
+.modal-menu__header-logo .header-logo__image
+	width: 241.7px
+	height: 105px
+
+.modal-menu__lists
+	display: flex
+	flex-wrap: nowrap
+	height: 253px
+	margin:
+		bottom: 82px
+		top: 77px
+.modal-menu__lists-menu
+	flex-basis: 66.66666%
+	flex-shrink: 1
+	flex-grow: 0
+	display: flex
+	flex-direction: column
+	flex-wrap: wrap
+.modal-menu__lists-block
+	flex-basis: 33.33333%
+	flex-shrink: 1
+	flex-grow: 0
+.modal-menu__list-item
+	margin:
+		bottom: 15px
+.modal-menu__item-link
+	font-family: Montserrat
+	font-size: 24px
+	font-weight: normal
+	font-style: normal
+	font-stretch: normal
+	line-height: 1.42
+	letter-spacing: normal
+	color: #ffffff
+	text-decoration: none
+
+.modal-menu__lists-block
+	margin:
+		top: 33px
+.modal-menu__lists-block .call-back__social
+	padding-left: 120px
+
+.modal-menu__footer
+	display: flex
+	flex-wrap: nowrap
+	padding:
+		top: 9px
+	justify-content: space-between
+.modal-menu__footer-block
+	flex-basis: 50%
+	flex-shrink: 1
+	flex-grow: 0
+.modal-menu__footer
+	border-top: 1px solid #d4d4d4
+.modal-menu__footer-text
+	font-family: Montserrat
+	font-size: 16px
+	font-weight: normal
+	font-style: normal
+	font-stretch: normal
+	line-height: 1.5
+	letter-spacing: normal
+	color: #d4d4d4
+.modal-menu__footer-block.builder
+	text-align: right
+/* /main-menu */
+
+/* animation */
+// @keyframes fadeInUp 
+// 	from
+// 		opacity: 0
+// 		transform: translate3d(0, 100%, 0)
+
+// 	to
+// 	opacity: 1
+// 	-webkit-transform: translate3d(0, 0, 0)
+// 	transform: translate3d(0, 0, 0)
+
+// .fadeInUp
+// 	animation-name: fadeInUp
+/* /animation */
 
 

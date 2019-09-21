@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="34px" viewBox="0 0 34 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>icn_detskaya_ploshadka</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="БА_Главная" transform="translate(-441.000000, -7498.000000)">
+            <g id="genplan" transform="translate(0.000000, 6671.000000)">
+                <g id="icn_detskaya_ploshadka" transform="translate(441.000000, 827.000000)">
+                    <circle id="Oval-Copy-16" fill="#EFA53D" fill-rule="nonzero" cx="17" cy="17" r="17"></circle>
+                    <path d="M10.778,13.223 L13.667,13.223 L13.667,10.333 L10.778,10.333 L10.778,13.223 Z M26.667,13.223 L26.667,14.667 L25.223,14.667 L25.223,16.112 L19.444,16.112 L19.444,11.778 C19.444,8.587 16.857,6 13.667,6 C10.475,6 7.889,8.587 7.889,11.778 L7.889,13.223 L5,13.223 L5,14.667 L6.444,14.667 L6.444,16.112 L7.889,16.112 L12.223,16.112 L9.333,18.278 C9.333,23.463 13.537,27.667 18.723,27.667 C23.907,27.667 28.111,23.463 28.111,18.278 L28.111,16.876 L28.111,16.112 L28.111,14.667 L28.111,13.223 L26.667,13.223 Z" id="Fill-1" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

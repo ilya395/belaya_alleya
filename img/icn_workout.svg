@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="34px" viewBox="0 0 34 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>icn_workout</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="БА_Главная" transform="translate(-892.000000, -7498.000000)">
+            <g id="genplan" transform="translate(0.000000, 6671.000000)">
+                <g id="icn_workout" transform="translate(892.000000, 827.000000)">
+                    <circle id="Oval-Copy-18" fill="#91CC3D" fill-rule="nonzero" cx="17" cy="17" r="17"></circle>
+                    <g id="Group-4" transform="translate(4.000000, 10.000000)" fill="#FFFFFF">
+                        <polygon id="Fill-1" points="2.4445 0.0003 2.4445 2.8883 0.9995 2.8883 0.9995 11.5553 2.4445 11.5553 2.4445 14.4443 6.7775 14.4443 6.7775 0.0003"></polygon>
+                        <polygon id="Fill-2" points="8.222 8.6664 16.888 8.6664 16.888 5.7774 8.222 5.7774"></polygon>
+                        <polygon id="Fill-3" points="18.334 0.0003 18.334 14.4443 22.667 14.4443 22.667 11.5553 24.111 11.5553 24.111 2.8883 22.667 2.8883 22.667 0.0003"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

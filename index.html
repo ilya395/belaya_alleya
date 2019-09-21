@@ -5,39 +5,55 @@
 	<title>Belaya Alleya</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
-
+	
+	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/main.css">
 
 	<script src="js/libs.min.js"></script>
 	<script src="js/common.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.3/lottie_svg.min.js"></script>
+	<!-- <script src="js/lottie.js" type="text/javascript"></script> -->
 </head>
 <body>
 	<div class="main-container">
+	<!-- Блок, который будет отображаться над страницей -->
+		<div id="before-load" class="">
+		  <!-- Элемент, задний фон которого будет использоваться для отображения gif изображения -->
+		  <i></i>
+		</div>
 		<!-- upper-slaider -->
 		<header class="upper-slaider">
 			<section class="upper-slaider__container">
 				<div class="upper-slaider__slaides-list">
-					<div class="upper-slaider__slaide">
-						<img src="/img/main_pic_1.jpg" alt="slaide" class="upper-slaider__slaide-image">
+					<div class="upper-slaider__slaide upper-first-slaide active">
+<!-- 						<img src="/img/main_pic_1.jpg" alt="slaide" class="upper-slaider__slaide-image">
+ -->					</div>
+					<div class="upper-slaider__slaide upper-second-slaide">
 					</div>
-	<!-- 				<div class="upper-slaider__slaide">
-						<img src="/img/main_pic_2.jpg" alt="slaide" class="upper-slaider__slaide-image">
+					<div class="upper-slaider__slaide upper-third-slaide">
 					</div>
-					<div class="upper-slaider__slaide">
-						<img src="/img/main_pic_3.jpg" alt="slaide" class="upper-slaider__slaide-image">
-					</div> -->
 				</div>
 				<div class="work-area upper-container">
 
 					<div class="header-up-line work-area_korrection">
 						<div class="header-menu">
-							<div class="header-menu__icon">
-								<img src="/img/burger-icon.png" alt="menu" class="header-menu__icon-image">
-							</div>
-							<span class="header-menu__word">
-								Меню
-							</span>
+
+								<div class="header-menu__icon bodymovinanim" id="mainMenu">
+<!-- 									<img src="/img/burger-icon.png" alt="menu" class="header-menu__icon-image"> -->
+<!-- 									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+										<line x1="3" y1="12" x2="21" y2="12">
+										</line>
+										<line x1="3" y1="6" x2="21" y2="6">
+										</line>
+										<line x1="3" y1="18" x2="21" y2="18">
+										</line>
+									</svg> -->
+								</div>
+								<span class="header-menu__word">
+									Меню
+								</span>
+
 						</div>
 						<div class="header-logo">
 							<img src="/img/logo_white.svg" alt="logo" class="header-logo__image">
@@ -69,51 +85,51 @@
 					</div>
 
 				</div>
-			</section>
-
-			<div class="work-area details-upper-row">
-				<div class="header-low-line work-area_korrection">
-					<div class="header-low-line__blocks">
-						<div class="header-low-line__block-img">
-							<img src="/img/icn_location.svg" alt="image" class="header-low-line__image">
-						</div>
-						<div class="header-low-line__block-info">
-							<div class="block-info__title">
-								Место застройки
+				<div class="work-area details-upper-row">
+					<div class="header-low-line">
+						<div class="header-low-line__blocks animated fadeInUp delay-1s">
+							<div class="header-low-line__block-img">
+								<img src="/img/icn_location.svg" alt="image" class="header-low-line__image">
 							</div>
-							<div class="block-info__sub-title">
-								п. Высокая Гора
-							</div>
-						</div>
-					</div>
-					<div class="header-low-line__blocks">
-						<div class="header-low-line__block-img">
-							<img src="/img/icn_time.svg" alt="image" class="header-low-line__image">
-						</div>
-						<div class="header-low-line__block-info">
-							<div class="block-info__title">
-								Окончание строительства
-							</div>
-							<div class="block-info__sub-title">
-								4 квартал 2022 года
+							<div class="header-low-line__block-info">
+								<div class="block-info__title">
+									Место застройки
+								</div>
+								<div class="block-info__sub-title">
+									п. Высокая Гора
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="header-low-line__blocks">
-						<div class="header-low-line__block-img">
-							<img src="/img/icn_key.svg" alt="image" class="header-low-line__image">
-						</div>
-						<div class="header-low-line__block-info">
-							<div class="block-info__title">
-								Квартиры
+						<div class="header-low-line__blocks animated fadeInUp delay-1_5s">
+							<div class="header-low-line__block-img">
+								<img src="/img/icn_time.svg" alt="image" class="header-low-line__image">
 							</div>
-							<div class="block-info__sub-title">
-								от 1,8 млн руб
+							<div class="header-low-line__block-info">
+								<div class="block-info__title">
+									Окончание строительства
+								</div>
+								<div class="block-info__sub-title">
+									4 квартал 2022 года
+								</div>
+							</div>
+						</div>
+						<div class="header-low-line__blocks animated fadeInUp delay-2s">
+							<div class="header-low-line__block-img">
+								<img src="/img/icn_key.svg" alt="image" class="header-low-line__image">
+							</div>
+							<div class="header-low-line__block-info">
+								<div class="block-info__title">
+									Квартиры
+								</div>
+								<div class="block-info__sub-title">
+									от 1,8 млн руб
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
+
 		</header>
 		<!-- /upper-slaider -->
 
@@ -144,10 +160,10 @@
 
 					<div class="about-complex-slaider__container">
 						<div class="about-complex-slaider__slaides-list">
-							<div class="about-complex-slaider__slaide">
+							<div class="about-complex-slaider__slaide active">
 								<img src="/img/slide_01.jpg" alt="slaide" class="about-complex-slaider__slaide-image">
 							</div>
-<!-- 							<div class="about-complex-slaider__slaide">
+							<div class="about-complex-slaider__slaide">
 								<img src="/img/slide_02.jpg" alt="slaide" class="about-complex-slaider__slaide-image">
 							</div>
 							<div class="about-complex-slaider__slaide">
@@ -155,7 +171,7 @@
 							</div>
 							<div class="about-complex-slaider__slaide">
 								<img src="/img/slide_04.jpg" alt="slaide" class="about-complex-slaider__slaide-image">
-							</div> -->
+							</div>
 						</div>
 						<div class="about-complex-slaider__control">
 
@@ -169,7 +185,7 @@
 							</div>
 
 							<div class="about-complex-slaider__control-buttoms">
-								<button class="about-complex-slaider__control-buttom active"></button>
+								<button class="about-complex-slaider__control-buttom"></button>
 								<button class="about-complex-slaider__control-buttom"></button>
 								<button class="about-complex-slaider__control-buttom"></button>
 								<button class="about-complex-slaider__control-buttom"></button>
@@ -236,7 +252,7 @@
 
 				<div class="attention-details__advantages">
 
-					<div class="attention-details__tab first-tab">
+					<div class="attention-details__tab first-tab animated fadeIn">
 
 						<div class="attention-details__block-wrap">
 							<div class="attention-details__block first-block first-tab__first-block">
@@ -318,7 +334,7 @@
 
 					</div>
 
-					<div class="attention-details__tab second-tab">
+					<div class="attention-details__tab second-tab active animated fadeIn">
 
 						<div class="attention-details__block-wrap">
 							<div class="attention-details__block first-block second-tab__first-block">
@@ -723,27 +739,80 @@
 		<!-- general-plan -->
 		<section class="general-plan">
 			<div class="general-plan__wrapper">
-				<div class="general-plan__first-stage">
-					
-				</div>
-				<div class="general-plan__all-houses">
-					
-				</div>
-				<div class="general-plan__control attention-details__control">
-					<div class="attention-details__control-title">
-						Продумана каждая деталь
+				<div class="work-area">
+					<div class="work-area_korrection">
+						<div class="general-plan__control">
+							<div class="general-plan__control-title">
+								Генплан
+							</div>
+							<div class="general-plan__control-tabs">
+								<div class="general-plan__control-tab control-tab_left after">
+									Первая очередь
+								</div>
+								<div class="general-plan__control-tab control-tab_right after active">
+									Все дома
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="attention-details__control-tabs">
-						<div class="attention-details__control-tab control-tab_left after">
-							Дом и двор
-						</div>
-						<div class="attention-details__control-tab control-tab_right after active">
-							Подъезд и квартира
-						</div>
+				</div>
+				<div class="general-plan__for-watching">
+					<div class="general-plan__slaide general-plan__first-stage animated fadeIn">
+						
+					</div>
+					<div class="general-plan__slaide general-plan__all-houses animated fadeIn active">
+						
 					</div>
 				</div>
 				<div class="general-plan__list-objects">
-					
+					<div class="list-objects__wrapper">
+						<div class="work-area">
+							<div class="work-area_korrection">
+								<div class="list-objects__list">
+									<div class="list-objects__item middle">
+										<div class="list-objects__item-icon">
+											<img src="/img/icn_pervaya_ochered.svg" alt="icon" class="list-objects__item-image">
+										</div>
+										<div class="list-objects__item-title">
+											Первая очередь
+										</div>
+									</div>
+									<div class="list-objects__item long">
+										<div class="list-objects__item-icon">
+											<img src="/img/icn_detskaya_ploshadka.svg" alt="icon" class="list-objects__item-image">
+										</div>
+										<div class="list-objects__item-title">
+											Детская площадка
+										</div>
+									</div>
+									<div class="list-objects__item long">
+										<div class="list-objects__item-icon">
+											<img src="/img/icn_sportivnaya_ploshadka.svg" alt="icon" class="list-objects__item-image">
+										</div>
+										<div class="list-objects__item-title">
+											Спортивная площадка
+										</div>
+									</div>
+									<div class="list-objects__item">
+										<div class="list-objects__item-icon">
+											<img src="/img/icn_workout.svg" alt="icon" class="list-objects__item-image">
+										</div>
+										<div class="list-objects__item-title">
+											Work-out зона
+										</div>
+									</div>
+									<div class="list-objects__item">
+										<div class="list-objects__item-icon">
+											<img src="/img/icn_parking.svg" alt="icon" class="list-objects__item-image">
+										</div>
+										<div class="list-objects__item-title">
+											Парковка
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="general-plan__tour work-area">
@@ -850,7 +919,7 @@
 					</p>
 				</div>
 				<div class="location__picture work-area_korrection">
-					<img src="/img/slide_04.jpg" alt="kids" class="location__image">
+					<img src="/img/block_lktn.jpg" alt="kids" class="location__image">
 				</div>
 			</div>
 		</section>
@@ -980,6 +1049,126 @@
 			</div>
 		</footer>
 		<!-- /call-back -->
+		<!-- /main-menu -->
+		<div class="modal-menu">
+			<div class="modal-menu__outside">
+				<div class="work-area">
+					<div class="modal-menu__wrapper work-area_korrection">
+						<div class="modal-menu__header">
+							<div class="modal-menu__header-block">
+								
+							</div>
+							<div class="modal-menu__header-block">
+								<div class="modal-menu__header-logo">
+									<img src="/img/logo_white.svg" alt="logo" class="header-logo__image">
+								</div>
+							</div>
+							<div class="modal-menu__header-block phone">
+								<div class="header-phones__number">
+									+7 (843) 555-55-55
+								</div>
+								<a href="tel:+78435555555" class="header-phones__callback-link">
+									Заказать звонок
+								</a>
+							</div>
+						</div>
+						<div class="modal-menu__lists">
+							<div class="modal-menu__lists-menu">
+								<div class="modal-menu__list-item">
+									<a href="#" class="modal-menu__item-link">
+										О комплексе
+									</a>
+								</div>
+								<div class="modal-menu__list-item">
+									<a href="#" class="modal-menu__item-link">
+										Планировки
+									</a>
+								</div>
+								<div class="modal-menu__list-item">
+									<a href="#" class="modal-menu__item-link">
+										Ход строительства
+									</a>
+								</div>
+								<div class="modal-menu__list-item">
+									<a href="#" class="modal-menu__item-link">
+										Новости
+									</a>
+								</div>
+								<div class="modal-menu__list-item">
+									<a href="#" class="modal-menu__item-link">
+										Расположение
+									</a>
+								</div>
+								<div class="modal-menu__list-item">
+									<a href="#" class="modal-menu__item-link">
+										Инфраструктура
+									</a>
+								</div>
+								<div class="modal-menu__list-item">
+									<a href="#" class="modal-menu__item-link">
+										О застройщике
+									</a>
+								</div>
+								<div class="modal-menu__list-item">
+									<a href="#" class="modal-menu__item-link">
+										Документы
+									</a>
+								</div>
+								<div class="modal-menu__list-item">
+									<a href="#" class="modal-menu__item-link">
+										Варианты оплаты
+									</a>
+								</div>
+								<div class="modal-menu__list-item">
+									<a href="#" class="modal-menu__item-link">
+										Акции
+									</a>
+								</div>
+							</div>
+							<div class="modal-menu__lists-block">
+								<div class="call-back__social">
+									<div class="call-back__social-icon vkontakte">
+										<img src="/img/vk-brands.svg" alt="vkontakte" class="social-icon__image">
+									</div>
+									<a href="#" class="call-back__social-name">
+										vkontakte
+									</a>
+								</div>
+								<div class="call-back__social">
+									<div class="call-back__social-icon instagram">
+										<img src="/img/instagram-brands.svg" alt="instagram" class="social-icon__image">
+									</div>
+									<a href="#" class="call-back__social-name">
+										instagram
+									</a>
+								</div>
+								<div class="call-back__social">
+									<div class="call-back__social-icon facebook">
+										<img src="/img/facebook-f-brands.svg" alt="facebook" class="social-icon__image">
+									</div>
+									<a href="#" class="call-back__social-name">
+										facebоok
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="modal-menu__footer">
+							<div class="modal-menu__footer-block">
+								<span class="modal-menu__footer-text">
+									Место застройки:<br>Высокая Гора, Зелёная 2-я
+								</span>
+							</div>
+							<div class="modal-menu__footer-block builder">
+								<span class="modal-menu__footer-text">
+									Застройщик:<br>ООО «Прогресс»
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /main-menu -->
 	</div>
 </body>
 </html>

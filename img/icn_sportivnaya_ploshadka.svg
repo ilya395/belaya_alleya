@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="34px" viewBox="0 0 34 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>icn_sportivnaya_ploshadka</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.6667 0.889 15.111 0.889 15.111 23.9995 0.6667 23.9995"></polygon>
+        <polygon id="path-3" points="0 0.8885 5.7777 0.8885 5.7777 6.6665 0 6.6665"></polygon>
+    </defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="БА_Главная" transform="translate(-652.000000, -7498.000000)">
+            <g id="genplan" transform="translate(0.000000, 6671.000000)">
+                <g id="icn_sportivnaya_ploshadka" transform="translate(652.000000, 827.000000)">
+                    <circle id="Oval-Copy-17" fill="#91CC3D" fill-rule="nonzero" cx="17" cy="17" r="17"></circle>
+                    <g id="Group-9" transform="translate(5.000000, 3.000000)">
+                        <g id="Group-3" transform="translate(8.000000, 0.111100)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="Clip-2"></g>
+                            <path d="M7.8887,13.8885 C5.4987,13.8885 3.5557,11.6205 3.5557,8.8335 C3.5557,6.0455 5.4987,3.7785 7.8887,3.7785 C10.2787,3.7785 12.2227,6.0455 12.2227,8.8335 C12.2227,11.6205 10.2787,13.8885 7.8887,13.8885 Z M6.4437,16.7785 L9.3327,16.7785 L9.3327,15.3345 L6.4437,15.3345 L6.4437,16.7785 Z M7.8887,0.8885 C3.9077,0.8885 0.6667,4.4535 0.6667,8.8335 C0.6667,11.4235 1.8057,13.7225 3.5557,15.1735 L3.5557,15.3335 L3.7497,15.3335 C4.1407,15.6355 4.5577,15.8965 4.9997,16.1095 L4.9997,16.7785 L4.9997,18.2225 L6.4447,18.2225 L6.4447,23.9995 L9.3327,23.9995 L9.3327,18.2225 L10.7777,18.2225 L10.7777,16.7785 L10.7777,16.1095 C11.2197,15.8965 11.6377,15.6355 12.0287,15.3335 L12.2227,15.3335 L12.2227,15.1735 C13.9727,13.7225 15.1117,11.4235 15.1117,8.8335 C15.1117,4.4535 11.8707,0.8885 7.8887,0.8885 Z" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                        </g>
+                        <g id="Group-6" transform="translate(0.000000, 13.111100)">
+                            <mask id="mask-4" fill="white">
+                                <use xlink:href="#path-3"></use>
+                            </mask>
+                            <g id="Clip-5"></g>
+                            <path d="M5.0557,0.8885 C2.2637,0.8885 -0.0003,3.1525 -0.0003,5.9445 C-0.0003,6.1925 0.0377,6.4285 0.0737,6.6665 L5.7777,6.6665 L5.7777,0.9615 C5.5397,0.9275 5.3027,0.8885 5.0557,0.8885" id="Fill-4" fill="#FFFFFF" mask="url(#mask-4)"></path>
+                        </g>
+                        <path d="M7.2227,14.5054 L7.2227,19.7774 L5.7777,19.7774 L5.7777,21.2224 L0.5047,21.2224 C1.3187,22.9254 3.0417,24.1104 5.0557,24.1104 C7.8477,24.1104 10.1117,21.8474 10.1117,19.0554 C10.1117,17.0424 8.9257,15.3174 7.2227,14.5054" id="Fill-7" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

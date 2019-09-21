@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="34px" viewBox="0 0 34 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>icn_pervaya_ochered</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="БА_Главная" transform="translate(-250.000000, -7498.000000)">
+            <g id="genplan" transform="translate(0.000000, 6671.000000)">
+                <g id="icn_pervaya_ochered" transform="translate(250.000000, 827.000000)">
+                    <circle id="Oval-Copy-15" fill="#1E3751" fill-rule="nonzero" cx="17" cy="17" r="17"></circle>
+                    <g id="Group-4" transform="translate(5.000000, 6.000000)" fill="#FFFFFF">
+                        <polygon id="Fill-1" points="13.0005 0 13.0005 1.445 -0.0005 1.445 -0.0005 4.333 2.8895 4.333 2.8895 10.111 4.3335 10.111 4.3335 4.333 13.0005 4.333 13.0005 17.334 10.1105 17.334 10.1105 23.111 18.7775 23.111 18.7775 17.334 17.3335 17.334 17.3335 4.333 23.1115 4.333 23.1115 1.445 17.3335 1.445 17.3335 0"></polygon>
+                        <polygon id="Fill-2" points="0 15.8881 2.889 15.8881 2.889 10.1111 0 10.1111"></polygon>
+                        <polygon id="Fill-3" points="4.333 15.8881 7.222 15.8881 7.222 10.1111 4.333 10.1111"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
