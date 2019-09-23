@@ -103,7 +103,7 @@ $(window).on('load', function() {
 
 			controlDotsItems.on('click', function currentSlide(n) {
 			    var n = $(this).index() + 1;
-			    console.log(n);
+			    // console.log(n);
 			    showSlides(slideIndex = n);
 			    clearTimeout(timerId)
 		    });
@@ -111,7 +111,7 @@ $(window).on('load', function() {
 
 			function showSlides(n) {
 				var i;
-				console.log(slides.length);
+				// console.log(slides.length);
 				if (n > slides.length) {
 					slideIndex = 1;
 				}
@@ -229,6 +229,273 @@ $(window).on('load', function() {
 				}
 			}
 		});
+
+	    if (window.matchMedia('(max-width: 577px)').matches) {
+
+			// новостной слайдер
+			function secondSlaiderForNews() {
+
+				// var delay = 4000;
+				// var timerId = setInterval(function currentSlide() {
+				// 	showSlides(slideIndex += 1);
+				// }, delay);
+
+				var slideIndex = 1;
+				
+				var slides = $('.second-tab .attention-details__block-wrap');
+				var controlDotsItems = $('.second-tab .attention-details__tab-button');
+
+				showSlides(slideIndex);
+
+				// $('.note-control__right').on('click', function nextSlide() {
+				// 	showSlides(slideIndex += 1);
+				// });
+
+				// $('.note-control__left').on('click', function previousSlide() {
+				// 	showSlides(slideIndex -= 1);
+				// });
+
+				controlDotsItems.on('click', function currentSlide(n) {
+				    var n = $(this).index() + 1;
+				    console.log(n);
+				    showSlides(slideIndex = n);
+				    // clearTimeout(timerId)
+			    });
+
+				function showSlides(n) {
+					var i = 0;
+					// console.log(slides.length);
+					if (n > slides.length) {
+						slideIndex = 1;
+					};
+					if (n < 1) {
+						slideIndex = slides.length;
+					};
+					for (i = 0; i < slides.length; i++) {
+						$(slides[i]).removeClass('active');
+						console.log('!');
+					};
+					for (i = 0; i < controlDotsItems.length; i++) {
+						//dots[i].className = dots[i].className.replace("active", "");
+						$(controlDotsItems[i]).removeClass('active');
+					};
+
+					$(slides[slideIndex - 1]).addClass('active');
+					console.log('?');
+					$(controlDotsItems[slideIndex - 1]).addClass('active');
+					console.log($(slides[slideIndex - 1]));
+				};
+			};
+			var startSecondSlaiderForNews = secondSlaiderForNews();
+			//
+			function firstSlaiderForNews() {
+
+				// var delay = 4000;
+				// var timerId = setInterval(function currentSlide() {
+				// 	showSlides(slideIndex += 1);
+				// }, delay);
+
+				var slideIndex = 1;
+				
+				var slides = $('.first-tab .attention-details__block-wrap');
+				var controlDotsItems = $('.first-tab .attention-details__tab-button');
+
+				showSlides(slideIndex);
+
+				// $('.note-control__right').on('click', function nextSlide() {
+				// 	showSlides(slideIndex += 1);
+				// });
+
+				// $('.note-control__left').on('click', function previousSlide() {
+				// 	showSlides(slideIndex -= 1);
+				// });
+
+				controlDotsItems.on('click', function currentSlide(n) {
+				    var n = $(this).index() + 1;
+				    console.log(n);
+				    showSlides(slideIndex = n);
+				    // clearTimeout(timerId)
+			    });
+
+				function showSlides(n) {
+					var i = 0;
+					// console.log(slides.length);
+					if (n > slides.length) {
+						slideIndex = 1;
+					};
+					if (n < 1) {
+						slideIndex = slides.length;
+					};
+					for (i = 0; i < slides.length; i++) {
+						$(slides[i]).removeClass('active');
+					};
+					for (i = 0; i < controlDotsItems.length; i++) {
+						//dots[i].className = dots[i].className.replace("active", "");
+						$(controlDotsItems[i]).removeClass('active');
+					};
+
+					$(slides[slideIndex - 1]).addClass('active');
+					$(controlDotsItems[slideIndex - 1]).addClass('active');
+				};
+			};
+			var startFirstSlaiderForNews = firstSlaiderForNews();
+			//
+			function fineFinishSlaider() {
+
+				// var delay = 4000;
+				// var timerId = setInterval(function currentSlide() {
+				// 	showSlides(slideIndex += 1);
+				// }, delay);
+
+				var slideIndex = 1;
+				
+				var slides = $('.fine-finish__info-wrap');
+				var controlDotsItems = $('.fine-finish__slide-buttoms');
+
+				showSlides(slideIndex);
+
+				controlDotsItems.on('click', function currentSlide(n) {
+				    var n = $(this).index() + 1;
+				    console.log(n);
+				    showSlides(slideIndex = n);
+				    // clearTimeout(timerId)
+			    });
+
+				function showSlides(n) {
+					var i = 0;
+					// console.log(slides.length);
+					if (n > slides.length) {
+						slideIndex = 1;
+					};
+					if (n < 1) {
+						slideIndex = slides.length;
+					};
+					for (i = 0; i < slides.length; i++) {
+						$(slides[i]).removeClass('active');
+						console.log('!');
+					};
+					for (i = 0; i < controlDotsItems.length; i++) {
+						$(controlDotsItems[i]).removeClass('active');
+					};
+
+					$(slides[slideIndex - 1]).addClass('active');
+					$(controlDotsItems[slideIndex - 1]).addClass('active');
+				};
+			};
+			var startFineFinishSlaider = fineFinishSlaider();
+			//
+			function projectNewsSlaider() {
+
+				// var delay = 4000;
+				// var timerId = setInterval(function currentSlide() {
+				// 	showSlides(slideIndex += 1);
+				// }, delay);
+
+				var slideIndex = 1;
+				
+				var slides = $('.project-news__news-item');
+				var controlDotsItems = $('.project-news__slaider-button');
+
+				showSlides(slideIndex);
+
+				$('.project-news__slaider-arrow.slaider-arrow__right').on('click', function nextSlide() {
+					showSlides(slideIndex += 1);
+				});
+
+				$('.project-news__slaider-arrow.slaider-arrow__left').on('click', function previousSlide() {
+					showSlides(slideIndex -= 1);
+				});
+
+				controlDotsItems.on('click', function currentSlide(n) {
+				    var n = $(this).index() + 1;
+				    console.log(n);
+				    showSlides(slideIndex = n);
+				    // clearTimeout(timerId)
+			    });
+
+				function showSlides(n) {
+					var i = 0;
+					// console.log(slides.length);
+					if (n > slides.length) {
+						slideIndex = 1;
+					};
+					if (n < 1) {
+						slideIndex = slides.length;
+					};
+					for (i = 0; i < slides.length; i++) {
+						$(slides[i]).removeClass('active');
+					};
+					for (i = 0; i < controlDotsItems.length; i++) {
+						//dots[i].className = dots[i].className.replace("active", "");
+						$(controlDotsItems[i]).removeClass('active');
+					};
+
+					$(slides[slideIndex - 1]).addClass('active');
+					$(controlDotsItems[slideIndex - 1]).addClass('active');
+				};
+			};
+			var startProjectNewsSlaider = projectNewsSlaider();
+			//
+			function сonstructionProgressSlaider() {
+
+				// var delay = 4000;
+				// var timerId = setInterval(function currentSlide() {
+				// 	showSlides(slideIndex += 1);
+				// }, delay);
+
+				var slideIndex = 1;
+				
+				var slides = $('.construction-progress__slade');
+				var elem = $('.construction-progress__control-bottons');
+				var elemHtmlVal = '<div class="construction-progress__control-botton active"></div>';
+				for(var i = 0; i < slides.length - 1; i++){
+					elemHtmlVal = elemHtmlVal + '<div class="construction-progress__control-botton"></div>';
+					
+				};
+				elem.html(elemHtmlVal);
+				var controlDotsItems = $('.construction-progress__control-botton');
+
+				showSlides(slideIndex);
+
+				$('.note-control__right').on('click', function nextSlide() {
+					showSlides(slideIndex += 1);
+				});
+
+				$('.note-control__left').on('click', function previousSlide() {
+					showSlides(slideIndex -= 1);
+				});
+
+				controlDotsItems.on('click', function currentSlide(n) {
+				    var n = $(this).index() + 1;
+				    console.log(n);
+				    showSlides(slideIndex = n);
+				    // clearTimeout(timerId)
+			    });
+
+				function showSlides(n) {
+					var i = 0;
+					// console.log(slides.length);
+					if (n > slides.length) {
+						slideIndex = 1;
+					};
+					if (n < 1) {
+						slideIndex = slides.length;
+					};
+					for (i = 0; i < slides.length; i++) {
+						$(slides[i]).removeClass('active');
+					};
+					for (i = 0; i < controlDotsItems.length; i++) {
+						//dots[i].className = dots[i].className.replace("active", "");
+						$(controlDotsItems[i]).removeClass('active');
+					};
+
+					$(slides[slideIndex - 1]).addClass('active');
+					$(controlDotsItems[slideIndex - 1]).addClass('active');
+				};
+			};
+			var startConstructionProgressSlaider = сonstructionProgressSlaider();
+
+	    };
 
 	});
 });

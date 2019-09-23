@@ -9,9 +9,12 @@ html
 	box-sizing: border-box
 body
 	margin: 0
+.body-project
+	// min-width: 1200px
 .main-container
 	width: 100%
 	margin: 0 auto
+	position: relative
 	overflow: hidden
 
 #before-load
@@ -31,6 +34,16 @@ body
 	background: url('../img/25.gif') no-repeat 50% 50% /*расположение (url) изображения gif и др. параметры*/
 	margin: -35px 0 0 -35px
 	// z-index: 91
+
+@media (max-width: 320px)
+	#before-load i
+		background-size: 50% 50% 
+		left: calc(50% - 30px)
+@media (min-width: 320px)
+	#before-load i
+		background-size: 100% 100%
+		// margin: 0 auto 
+		left: calc(50% - 30px)
 
 
 /* /simple */
@@ -1617,7 +1630,7 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 .main-form__button:hover
 	border: 1px solid #c59b6e
 	background-color: transparent
-	color: #c59b6e
+	color: #fff
 /* /main-form */
 
 /* call-back */
@@ -1765,6 +1778,8 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 .modal-menu__header-logo .header-logo__image
 	width: 241.7px
 	height: 105px
+	margin: 0 auto
+	display: block
 
 .modal-menu__lists
 	display: flex
@@ -1833,6 +1848,10 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
  * @media
  */
 @media (max-width: 320px)
+
+	.body-project
+		min-width: 320px
+
 	.work-area
 		width: 100%
 	.work-area_korrection
@@ -1974,19 +1993,41 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 	.first-block
 		width: 100%
 	.first-tab__first-block
+		background: url(../img/m2_01.jpg) no-repeat center
 		background-size: cover
+	.first-tab__second-block
+		background: url(../img/m2_02.jpg) no-repeat center
+	.first-tab__third-block
+		background: url(../img/m2_03.jpg) no-repeat center
+	.first-tab__fourth-block
+		background: url(../img/m2_04.jpg) no-repeat center
+	.first-tab__fifth-block
+		background: url(../img/m2_05.jpg) no-repeat center
+	.first-tab__sixth-block
+		background: url(../img/m2_06.jpg) no-repeat center
 	.second-tab__first-block
+		background: url(../img/m1_01.jpg) no-repeat center
 		background-size: cover
 	.second-block
 		width: 100%
+	.second-tab__second-block
+		background: url(../img/m1_02.jpg) no-repeat center
 	.third-block
 		width: 100%
+	.second-tab__third-block
+		background: url(../img/m1_03.jpg) no-repeat center
 	.fourth-block
 		width: 100%
+	.second-tab__fourth-block
+		background: url(../img/m1_04.jpg) no-repeat center
 	.fifth-block
 		width: 100%
+	.second-tab__fifth-block
+		background: url(../img/m1_05.jpg) no-repeat center
 	.sixth-block
 		width: 100%
+	.second-tab__sixth-block
+		background: url(../img/m1_06.jpg) no-repeat center
 	.attention-details__block-wrap
 		flex-basis: 100%
 		flex-shrink: 1
@@ -2440,6 +2481,10 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 		margin-top: 5px
 
 @media (min-width: 320px)
+
+	.body-project
+		min-width: 320px
+
 	.work-area
 		width: 100%
 	.work-area_korrection
@@ -2450,7 +2495,8 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 	.header-menu__word
 		display: none
 	.upper-slaider__slaides-list
-		height: 410px
+		height: calc(100vh - 191px)
+		// min-height: 410px
 	.header-phones__callback-icon
 		display: block
 	.header-middle-line
@@ -2521,7 +2567,7 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 	.about-complex-slaider__slaide-description
 		font-size: 15px
 	.about-complex-slaider__control-arrows
-		bottom: calc(100% + 50px)//calc(160px + 25px)
+		bottom: calc(100% + 20vw)// 85px)//calc(160px + 25px)
 	.about-complex-slaider__arrow-left
 		margin-left: 0px
 		width: 70%
@@ -2752,7 +2798,7 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 		display: none
 		flex-basis: 100%
 		border-radius: 0px
-		height: auto
+		height: 280px //auto
 	.project-news__news-item.active
 		display: block
 	.project-news__new-date
@@ -2768,7 +2814,7 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 	.project-news__new-title
 		margin-bottom: 29px
 	.project-news__new-description
-		margin-bottom: 52px
+		margin-bottom: 24vw//76px
 	.project-news__slaider-control
 		display: block
 		position: relative
@@ -2826,7 +2872,7 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 		font-size: 18px
 	.stock__slaid-sub-title
 		font-size: 18px
-		margin-bottom: 128px
+		margin-bottom: 50vw//128px
 	.owl-dots
 		display: block
 		margin-left: 20px
@@ -2845,7 +2891,7 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 		margin:
 			right: 20px
 	.owl-nav
-		bottom: calc(162px - 35px)
+		bottom: calc(100% - 43vw)//calc(162px - 0px)
 	.stock__button
 		margin-top: 30px
 
@@ -2867,7 +2913,7 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 		flex-basis: 40%
 		text-align: left
 	.general-plan__for-watching
-		height: 206px
+		height: 50vw//206px
 	.general-plan__all-houses
 		background-size: cover
 	.general-plan__list-objects
@@ -3047,6 +3093,10 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 		margin-top: 5px
 
 @media (min-width: 577px)
+
+	.body-project
+		min-width: 1200px
+
 	.work-area
 		width: 1080px
 	.work-area_korrection
@@ -3058,6 +3108,7 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 		display: inline-block
 	.upper-slaider__slaides-list
 		height: calc(100vh - 95px)
+		// min-height: 800px
 	.header-phones__callback-icon
 		display: none
 	.header-middle-line
