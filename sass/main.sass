@@ -77,8 +77,9 @@ body
 	height: 100%
 	position: relative
 	display: none
+	opacity: 0.5
 .upper-slaider__slaide.active
-	display: block
+	display: block	
 .upper-first-slaide
 	background: url(../img/main_pic_1.jpg) no-repeat center
 	background-size: cover
@@ -137,7 +138,7 @@ body
 	position: absolute
 	z-index: 81
 	top: 20px
-	left: 20px
+	// left: 20px
 .header-menu__word
 	display: inline-block
 	font-family: GothamPro
@@ -175,7 +176,7 @@ body
 	display: inline-block
 	font-family: Montserrat
 	font-size: 14px
-	font-weight: normal
+	font-weight: 300
 	font-style: normal
 	font-stretch: normal
 	line-height: normal
@@ -203,6 +204,8 @@ body
 	top: calc(50vh - 150px)
 	position: absolute
 .header-middle-line__title
+	height: 138px
+	margin-bottom: 47px
 .header-middle-line__title_main
 	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5)
 	font-family: Montserrat
@@ -214,6 +217,16 @@ body
 	letter-spacing: normal
 	text-align: center
 	color: #ffffff
+	margin-top: 0px
+	margin-bottom: 0px
+	display: flex
+	align-items: center
+	justify-content: center
+.header-middle-line__title-text
+	display: none
+.header-middle-line__title-text.active
+	display: block
+	opacity: 0
 .header-middle-line__buttons
 	display: flex
 	flex-wrap: nowrap
@@ -242,11 +255,12 @@ body
 		right: 25px
 	transition: background-color 0.6s ease, color 0.6s ease
 .header-middle-line__button-plans.hovered:hover
-		background-color: #fff
-		color: #1e3751
+	background-color: rgba(255,255,255,0.9)
+	color: #1e3751
+	// opacity: 0.8
 .header-middle-line__button-about
-		background-color: #fff
-		color: #1e3751
+	background-color: #fff
+	color: #1e3751
 .header-middle-line__button-about.hovered:hover,
 	background-color: transparent
 	color: #ffffff
@@ -284,7 +298,7 @@ body
 .block-info__title
 	font-family: Montserrat
 	font-size: 14px
-	font-weight: normal
+	font-weight: 300
 	font-style: normal
 	font-stretch: normal
 	line-height: 1.64
@@ -334,7 +348,7 @@ body
 		left: 70px
 	font-family: Montserrat
 	font-size: 24px
-	font-weight: normal
+	font-weight: 300
 	font-style: normal
 	font-stretch: normal
 	line-height: 1.42
@@ -349,7 +363,7 @@ body
 		left: 70px
 	font-family: Montserrat
 	font-size: 16px
-	font-weight: normal
+	font-weight: 300
 	font-style: normal
 	font-stretch: normal
 	line-height: 1.5
@@ -366,11 +380,10 @@ body
 	position: relative
 .about-complex-slaider__slaide
 	display: none
-	opacity: 0
+	opacity: 0.5
 	transition: opacity 0.6s ease
 .about-complex-slaider__slaide.active
 	display: block
-	opacity: 1
 .about-complex-slaider__slaide-image
 	width: 100%
 	height: auto
@@ -425,6 +438,8 @@ body
 	height: 150px
 .about-complex-slaider__description-slaide.action
 	display: flex
+.about-complex-slaider__description-slaide.animated
+	animation-duration: 2.1s
 .about-complex-slaider__slide-title
 	flex-basis: 33.33333%
 	flex-shrink: 1
@@ -445,7 +460,7 @@ body
 	flex-grow: 0
 	font-family: Montserrat
 	font-size: 16px
-	font-weight: normal
+	font-weight: 300
 	font-style: normal
 	font-stretch: normal
 	line-height: 1.5
@@ -475,7 +490,7 @@ body
 .attention-details__control-title, .general-plan__control-title
 	font-family: Montserrat
 	font-size: 24px
-	font-weight: bold
+	font-weight: 300
 	font-style: normal
 	font-stretch: normal
 	line-height: 1.42
@@ -492,7 +507,7 @@ body
 .attention-details__control-tab, .general-plan__control-tab
 	font-family: Montserrat
 	font-size: 16px
-	font-weight: normal
+	font-weight: 300
 	font-style: normal
 	font-stretch: normal
 	line-height: normal
@@ -551,11 +566,14 @@ body
 	padding:
 		left: 10px
 		right: 10px
-.attention-details__block
+.attention-details__block.hovered
 	border-radius: 5px
 	margin: 
 		bottom: 20px
 	height: 300px
+	transition: background-size 1.6s linear
+.attention-details__block.hovered:hover
+	background-size: 110%
 
 .first-block
 	width: 380px
@@ -641,7 +659,7 @@ body
 	width: 160px
 	font-family: Montserrat
 	font-size: 14px
-	font-weight: normal
+	font-weight: 300
 	font-style: normal
 	font-stretch: normal
 	line-height: 1.14
@@ -672,7 +690,7 @@ body
 .thoughtful-planning__description
 	font-family: Montserrat
 	font-size: 16px
-	font-weight: normal
+	font-weight: 300
 	font-style: normal
 	font-stretch: normal
 	line-height: 1.5
@@ -724,7 +742,7 @@ body
 	background-color: transparent
 	font-family: Montserrat
 	font-size: 18px
-	font-weight: normal
+	font-weight: 300
 	font-style: normal
 	font-stretch: normal
 	line-height: 2.40 //2.78
@@ -747,7 +765,7 @@ body
 .navigation-row__class-control .class-control__slaider .slaide-word
 	font-family: Montserrat
 	font-size: 28px
-	font-weight: normal
+	font-weight: 300
 	font-style: normal
 	font-stretch: normal
 	line-height: normal
@@ -826,7 +844,7 @@ body
 .fine-finish__info-description
 	font-family: Montserrat
 	font-size: 16px
-	font-weight: normal
+	font-weight: 300
 	font-style: normal
 	font-stretch: normal
 	line-height: 1.5
@@ -908,7 +926,7 @@ body
 .info-message__item-sub-title
 	font-family: Montserrat
 	font-size: 14px
-	font-weight: normal
+	font-weight: 300
 	font-style: normal
 	font-stretch: normal
 	line-height: 1.14
@@ -944,7 +962,7 @@ body
 .fine-finish__question-sub-title
 	font-family: Montserrat
 	font-size: 16px
-	font-weight: normal
+	font-weight: 300
 	font-style: normal
 	font-stretch: normal
 	line-height: 1.5
@@ -961,6 +979,7 @@ body
 	text-align: center
 	color: #ffffff
 	border-radius: 25px
+	border: 1px solid #c59b6e
 	background-color: #c59b6e
 	width: 200px
 	height: calc(50px - 17px)
@@ -968,11 +987,10 @@ body
 	padding:
 		top: 17px
 	text-transform: uppercase
-	transition: background-color 0.6s ease, color 0.6s ease, border 0.6s ease
+	transition: background-color 0.6s ease, color 0.6s ease,
 .fine-finish__question-link:hover
 	background-color: transparent
 	color: #c59b6e
-	border: 1px solid #c59b6e
 /* /fine-finish */
 
 /* project-news */
@@ -1035,10 +1053,12 @@ body
 	color: #000000
 	margin:
 		bottom: 45px
+	height: 40px
+	overflow-y: hidden
 .project-news__new-description
 	font-family: Montserrat
 	font-size: 16px
-	font-weight: normal
+	font-weight: 300
 	font-style: normal
 	font-stretch: normal
 	line-height: 1.5
@@ -1046,6 +1066,9 @@ body
 	color: #000000
 	margin:
 		bottom: 76px
+	height: calc(96px + 76px - 20px)
+	overflow-y: hidden
+
 .project-news__new-date
 	font-family: Montserrat
 	font-size: 12px
@@ -1139,6 +1162,17 @@ body
 	position: absolute
 	top: 28px
 	left: 30px
+	display: flex
+	flex-wrap: nowrap
+	flex-direction: column
+	height: 100%
+
+.stock__slaid-title, .stock__slaid-sub-title, .stock__slaid-date
+	flex-basis: auto
+	flex-shrink: 1
+	flex-grow: 0
+.stock__slaid-sub-title
+	flex-basis: 60%
 
 .stock__slaid-title
 	font-family: Montserrat
@@ -1299,7 +1333,7 @@ body
 .list-objects__item-title
 	font-family: Montserrat
 	font-size: 14px
-	font-weight: normal
+	font-weight: 300
 	font-style: normal
 	font-stretch: normal
 	line-height: normal
@@ -1388,7 +1422,7 @@ body
 	display: block
 	font-family: Montserrat
 	font-size: 16px
-	font-weight: normal
+	font-weight: 300
 	font-style: normal
 	font-stretch: normal
 	line-height: normal
@@ -1425,7 +1459,7 @@ body
 		right: 30px
 	font-family: Montserrat
 	font-size: 16px
-	font-weight: normal
+	font-weight: 300
 	font-style: normal
 	font-stretch: normal
 	line-height: 1.5
@@ -1462,7 +1496,7 @@ body
 .location__description-paragraph
 	font-family: Montserrat
 	font-size: 16px
-	font-weight: normal
+	font-weight: 300
 	font-style: normal
 	font-stretch: normal
 	line-height: 1.5
@@ -1497,7 +1531,7 @@ body
 	height: 40px
 	font-family: Montserrat
 	font-size: 14px
-	font-weight: normal
+	font-weight: 300
 	font-style: normal
 	font-stretch: normal
 	line-height: 1.71
@@ -1517,7 +1551,22 @@ body
 .infrastructure__map
 	width: 100%
 	height: 480px
-	background-color: #fff
+	// background-color: #fff
+	position: relative
+.infrastructure__map-container
+	width: 100%
+	height: 100%
+	display: block
+	position: absolute
+	left: 0
+	top: 0 
+	opacity: 0
+	z-index: 9
+.infrastructure__map-container.active
+	opacity: 1
+	z-index: 10
+.infrastructure__map-container.animated
+	animation-duration: 2s
 /* /infrastructure */
 
 /* main-form */
@@ -1554,7 +1603,7 @@ body
 	width: 100%
 	font-family: Montserrat
 	font-size: 14px
-	font-weight: normal
+	font-weight: 300
 	font-style: normal
 	font-stretch: normal
 	line-height: 1.71
@@ -1578,7 +1627,7 @@ body
 .agreement__check-box-text, .agreement__warn
 	font-family: Montserrat
 	font-size: 10px
-	font-weight: normal
+	font-weight: 300
 	font-style: normal
 	font-stretch: normal
 	line-height: normal
@@ -1661,7 +1710,7 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 .call-back__office-title, .call-back__office-description
 	font-family: Montserrat
 	font-size: 14px
-	font-weight: normal
+	font-weight: 300
 	font-style: normal
 	font-stretch: normal
 	line-height: normal
@@ -1680,7 +1729,7 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 .call-back__social-name
 	font-family: Montserrat
 	font-size: 14px
-	font-weight: normal
+	font-weight: 300
 	font-style: normal
 	font-stretch: normal
 	line-height: normal
@@ -1707,7 +1756,7 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 .call-back__info
 	font-family: Montserrat
 	font-size: 14px
-	font-weight: normal
+	font-weight: 300
 	font-style: normal
 	font-stretch: normal
 	line-height: normal
@@ -1805,7 +1854,7 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 .modal-menu__item-link
 	font-family: Montserrat
 	font-size: 24px
-	font-weight: normal
+	font-weight: 300
 	font-style: normal
 	font-stretch: normal
 	line-height: 1.42
@@ -1834,7 +1883,7 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 .modal-menu__footer-text
 	font-family: Montserrat
 	font-size: 16px
-	font-weight: normal
+	font-weight: 300
 	font-style: normal
 	font-stretch: normal
 	line-height: 1.5
@@ -1859,10 +1908,23 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 			left: 20px
 			right: 20px
 
+	.infrastructure__map
+		height: 380px
+
+	.stock__link
+		margin: 0 auto 0 20px
+
+	.upper-slaider__container
+		min-height: 0px
+
+	.attention-details__block.hovered:hover
+		background-size: 130%
+
 	.header-menu__word
 		display: none
 	.upper-slaider__slaides-list
 		height: 410px
+		min-height: 0px
 	.header-phones__callback-icon
 		display: block
 	.header-middle-line
@@ -1933,7 +1995,7 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 	.about-complex-slaider__slaide-description
 		font-size: 15px
 	.about-complex-slaider__control-arrows
-		bottom: calc(100% + 50px)//calc(160px + 25px)
+		bottom: calc(100% + 55px)//calc(160px + 25px)
 	.about-complex-slaider__arrow-left
 		margin-left: 0px
 		width: 70%
@@ -2201,8 +2263,12 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 		padding-left: 20px
 	.project-news__new-title
 		margin-bottom: 29px
+		height: 40px
+		overflow-y: hidden
 	.project-news__new-description
 		margin-bottom: 52px
+		height: calc(96px + 76px - 20px)
+		overflow-y: hidden
 	.project-news__slaider-control
 		display: block
 		position: relative
@@ -2256,11 +2322,12 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 	.stock__slaid-info
 		top: 16px
 		left: 20px
+		height: 100%
 	.stock__slaid-title
 		font-size: 18px
 	.stock__slaid-sub-title
 		font-size: 18px
-		margin-bottom: 128px
+		margin-bottom: 0px//128px
 	.owl-dots
 		display: block
 		margin-left: 20px
@@ -2368,12 +2435,14 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 	.construction-progress__control-botton.active
 		background-color: #1e3751
 	.project-news__news-link
-		border: solid 1px #1e3751
-		color: #1e3751
+		margin: 0 auto 0 20px
+		border: solid 1px #fff
+		color: #fff
 		transition: color 0.6s ease, background-color 0.6s ease
 	.project-news__news-link:hover
-		color: #fff
-		background-color: #1e3751
+		color: #1e3751
+		background-color: #fff
+		border: solid 1px #fff
 
 	.location__title
 		font-size: 26px
@@ -2492,15 +2561,24 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 			left: 20px
 			right: 20px
 
+	.upper-slaider__container
+		min-height: 0px
+
+	.stock__link
+		margin: 0 auto 0 20px
+
+	.infrastructure__map
+		height: 380px
+
 	.header-menu__word
 		display: none
 	.upper-slaider__slaides-list
 		height: calc(100vh - 191px)
-		// min-height: 410px
+		min-height: 0px
 	.header-phones__callback-icon
 		display: block
 	.header-middle-line
-		top: 320px
+		top: calc(50vh + 0vw)//320px
 	.header-middle-line__title_main
 		text-align: left
 	.header-middle-line__buttons
@@ -2640,6 +2718,8 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 		width: 100%
 	.sixth-block
 		width: 100%
+	.attention-details__block.hovered:hover
+		background-size: 130%
 	.attention-details__block-wrap
 		flex-basis: 100%
 		flex-shrink: 1
@@ -2813,8 +2893,12 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 		padding-left: 20px
 	.project-news__new-title
 		margin-bottom: 29px
+		height: 40px
+		overflow-y: hidden
 	.project-news__new-description
-		margin-bottom: 24vw//76px
+		margin-bottom: 5px//24vw//76px
+		height: calc(96px + 76px - 20px)
+		overflow-y: hidden
 	.project-news__slaider-control
 		display: block
 		position: relative
@@ -2868,11 +2952,12 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 	.stock__slaid-info
 		top: 16px
 		left: 20px
+		height: 100%
 	.stock__slaid-title
 		font-size: 18px
 	.stock__slaid-sub-title
 		font-size: 18px
-		margin-bottom: 50vw//128px
+		margin-bottom: 0vw//128px
 	.owl-dots
 		display: block
 		margin-left: 20px
@@ -2980,12 +3065,24 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 	.construction-progress__control-botton.active
 		background-color: #1e3751
 	.project-news__news-link
-		border: solid 1px #1e3751
-		color: #1e3751
+		border: solid 1px #fff
+		color: #fff
+		margin: 0 auto 0 20px
 		transition: color 0.6s ease, background-color 0.6s ease
 	.project-news__news-link:hover
+		color: #1e3751
+		background-color: #fff
+		border: solid 1px #fff
+
+	.construction-progress .project-news__news-link
+		border: solid 1px #1e3751
+		color: #1e3751
+		margin: 0 auto 0 20px
+		transition: color 0.6s ease, background-color 0.6s ease
+	.construction-progress .project-news__news-link:hover
 		color: #fff
 		background-color: #1e3751
+		border: solid 1px #1e3751
 
 	.location__title
 		font-size: 26px
@@ -3104,15 +3201,28 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 			left: 70px
 			right: 70px
 
+	.infrastructure__map
+		height: 480px
+
+	.upper-slaider__container
+		min-height: 800px
+
+	.attention-details__block.hovered:hover
+		background-size: 110%
+
 	.header-menu__word
 		display: inline-block
 	.upper-slaider__slaides-list
 		height: calc(100vh - 95px)
-		// min-height: 800px
+		min-height: calc(800px - 95px)
 	.header-phones__callback-icon
 		display: none
 	.header-middle-line
-		top: calc(50vh - 150px)
+		top: 320px // calc(50vh + 120px)
+		width: 100%
+	.header-middle-line.work-area_korrection
+		padding-left: 0px
+		padding-right: 0px
 	.header-middle-line__title_main
 		text-align: center
 	.header-middle-line__buttons
@@ -3122,6 +3232,8 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 	.header-logo__image
 		width: 100%
 		height: auto
+		max-width: 239px
+		max-height: 101px
 	.header-phones__number
 		display: block
 	.header-phones__callback-link
@@ -3162,10 +3274,12 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 	.about-complex__wrapper
 		flex-wrap: nowrap
 		margin-top: 40px
+		padding-left: 70px
+		padding-right: 70px
 	.about-complex__sub-title, 
 		flex-basis: 33.33333%
 		font-size: 24px
-		padding-left: 70px
+		padding-left: 0px
 		padding-right: 0px
 		margin:
 			bottom: 0px
@@ -3173,15 +3287,16 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 		flex-basis: 66.66666%
 		font-size: 16px
 		padding:
-			left: 70px
-			right: 70px
+			left: 100px
+			right: 0px
+		box-sizing: border-box
 	.about-complex-slaider__slide-title
 		font-size: 34px
 		margin-bottom: 0px
 	.about-complex-slaider__slaide-description
 		font-size: 16px
 	.about-complex-slaider__control-arrows
-		bottom: calc(290px + 25px)
+		bottom: calc(290px + 20px)
 	.about-complex-slaider__arrow-left
 		margin-left: 20px
 		width: 100%
@@ -3191,7 +3306,7 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 		width: 100%
 		height: 100%
 	.about-complex-slaider__control-arrow.control-arrow_right
-		margin-right: 0px
+		margin-right: 20px
 	.about-complex-slaider__control-buttoms
 		justify-content: center
 		padding-left: 0px
@@ -3411,8 +3526,12 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 		padding-left: 30px
 	.project-news__new-title
 		margin-bottom: 45px
+		height: 40px
+		overflow-y: hidden
 	.project-news__new-description
-		margin-bottom: 76px
+		margin-bottom: 20px
+		height: calc(96px + 76px - 20px)
+		overflow-y: hidden
 	.project-news__slaider-control
 		display: none
 
@@ -3444,7 +3563,7 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 		font-size: 28px
 	.stock__slaid-sub-title
 		font-size: 18px
-		margin-bottom: 200px
+		margin-bottom: 0px
 	.owl-dots
 		display: none
 	.owl-prev
@@ -3526,7 +3645,7 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 	.construction-progress.project-news
 		background-color: #1e3751
 	.construction-progress .project-news__title
-		color: #000
+		color: #fff
 	.construction-progress__arrow-right, .construction-progress__arrow-left
 		width: 100%
 		height: auto
@@ -3539,6 +3658,11 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 	.project-news__news-link
 		border: solid 1px #ffffff
 		color: #fff
+		margin: 0 auto
+	.project-news__news-link:hover
+		border: 1px solid #fff
+		background-color: #fff
+		color: #1e3751
 
 	.location__title
 		font-size: 48px
@@ -3644,6 +3768,9 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 
 	.modal-menu__item-link
 		font-size: 24px
+
+	.stock__link
+		margin: 0 auto
 
 
 
