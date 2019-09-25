@@ -75,11 +75,15 @@ body
 .upper-slaider__slaide
 	width: 100%
 	height: 100%
-	position: relative
-	display: none
-	opacity: 0.5
+	position: absolute
+	// display: none
+	opacity: 0
+	transition: opacity 1000ms ease 0s
+	top: 0
+	left: 0
 .upper-slaider__slaide.active
-	display: block	
+	// display: block
+	opacity: 1
 .upper-first-slaide
 	background: url(../img/main_pic_1.jpg) no-repeat center
 	background-size: cover
@@ -132,6 +136,8 @@ body
 // 	display: block
 // 	width: 100%
 .header-menu__icon
+	width: 24px
+	height: auto
 	display: inline-block
 	position: relative
 .header-menu__icon.active
@@ -170,8 +176,8 @@ body
 	letter-spacing: 0.56px
 	text-align: right
 	color: #ffffff
-	margin:
-		right: 70px
+	// margin:
+	// 	right: 70px
 .header-phones__callback-link
 	display: inline-block
 	font-family: Montserrat
@@ -183,8 +189,8 @@ body
 	letter-spacing: normal
 	text-align: right
 	color: #ffffff
-	margin:
-		right: 70px
+	// margin:
+	// 	right: 70px
 	text-decoration: underline
 .header-phones__callback-icon
 	display: none
@@ -224,9 +230,10 @@ body
 	justify-content: center
 .header-middle-line__title-text
 	display: none
+	opacity: 0
 .header-middle-line__title-text.active
 	display: block
-	opacity: 0
+	opacity: 1
 .header-middle-line__buttons
 	display: flex
 	flex-wrap: nowrap
@@ -378,18 +385,24 @@ body
 	position: relative
 .about-complex-slaider__container
 	position: relative
+	height: 584px
 .about-complex-slaider__slaide
-	display: none
-	opacity: 0.5
-	transition: opacity 0.6s ease
+	position: absolute
+	left: 0
+	right: 0
+	// display: none
+	opacity: 0
+	transition: opacity 1s ease
 .about-complex-slaider__slaide.active
-	display: block
+	// display: block
+	opacity: 1
 .about-complex-slaider__slaide-image
 	width: 100%
 	height: auto
 .about-complex-slaider__control
 	position: absolute
 	width: 100%
+	bottom: -55px
 .about-complex-slaider__control-arrows
 	position: absolute
 	width: 100%
@@ -1911,6 +1924,10 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 	.infrastructure__map
 		height: 380px
 
+	.shahmatka__floor-plan
+		padding-right: 20px
+		padding-left: 20px
+
 	.stock__link
 		margin: 0 auto 0 20px
 
@@ -1919,6 +1936,10 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 
 	.attention-details__block.hovered:hover
 		background-size: 130%
+
+	.about-complex-slaider__container
+		position: relative
+		height: 206px
 
 	.header-menu__word
 		display: none
@@ -1994,6 +2015,8 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 		font-size: 18px
 	.about-complex-slaider__slaide-description
 		font-size: 15px
+	.about-complex-slaider__control
+		bottom: 0px
 	.about-complex-slaider__control-arrows
 		bottom: calc(100% + 55px)//calc(160px + 25px)
 	.about-complex-slaider__arrow-left
@@ -2561,6 +2584,10 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 			left: 20px
 			right: 20px
 
+	.shahmatka__floor-plan
+		padding-right: 20px
+		padding-left: 20px
+
 	.upper-slaider__container
 		min-height: 0px
 
@@ -2569,6 +2596,10 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 
 	.infrastructure__map
 		height: 380px
+
+	.about-complex-slaider__container
+		position: relative
+		height: 55vw
 
 	.header-menu__word
 		display: none
@@ -2644,6 +2675,8 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 		font-size: 18px
 	.about-complex-slaider__slaide-description
 		font-size: 15px
+	.about-complex-slaider__control
+		bottom: -35px
 	.about-complex-slaider__control-arrows
 		bottom: calc(100% + 20vw)// 85px)//calc(160px + 25px)
 	.about-complex-slaider__arrow-left
@@ -3201,6 +3234,10 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 			left: 70px
 			right: 70px
 
+	.shahmatka__floor-plan
+		padding-right: 0px
+		padding-left: 0px
+
 	.infrastructure__map
 		height: 480px
 
@@ -3209,6 +3246,10 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 
 	.attention-details__block.hovered:hover
 		background-size: 110%
+
+	.about-complex-slaider__container
+		position: relative
+		height: 584px
 
 	.header-menu__word
 		display: inline-block
@@ -3295,6 +3336,8 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 		margin-bottom: 0px
 	.about-complex-slaider__slaide-description
 		font-size: 16px
+	.about-complex-slaider__control
+		bottom: -55px
 	.about-complex-slaider__control-arrows
 		bottom: calc(290px + 20px)
 	.about-complex-slaider__arrow-left
