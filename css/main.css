@@ -776,20 +776,30 @@ body {
   display: -ms-flexbox;
   display: flex; }
 
+.attention-details__block-wrap-inner {
+  margin-bottom: 20px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 5px; }
+
 .attention-details__block-wrap {
   padding-left: 10px;
   padding-right: 10px; }
 
-.attention-details__block.hovered {
-  border-radius: 5px;
-  margin-bottom: 20px;
-  height: 300px;
-  -webkit-transition: background-size 1.6s linear;
-  -o-transition: background-size 1.6s linear;
-  transition: background-size 1.6s linear; }
+.attention-details__block {
+  width: 110%;
+  height: 110%;
+  background-position: 50% 50%;
+  margin: -10px 0 0 -10px; }
 
 .attention-details__block.hovered:hover {
-  background-size: 110%; }
+  width: 100%;
+  height: 100%;
+  margin: 0px; }
+
+.attention-details__block.hovered:hover .attention-details__block-info {
+  padding-top: 5px;
+  padding-left: 10px; }
 
 .first-block {
   width: 380px; }
@@ -2469,6 +2479,8 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
     padding-right: 20px; }
   .infrastructure__map {
     height: 380px; }
+  .attention-details__block-title, .attention-details__block-sub-title {
+    width: 200px; }
   .shahmatka__floor-plan {
     padding-right: 20px;
     padding-left: 20px; }
@@ -2476,8 +2488,8 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
     margin: 0 auto 0 20px; }
   .upper-slaider__container {
     min-height: 0px; }
-  .attention-details__block.hovered:hover {
-    background-size: 130%; }
+  .about-complex {
+    padding-top: 50px; }
   .about-complex-slaider__container {
     position: relative;
     height: 206px; }
@@ -3106,6 +3118,17 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
     color: #1e3751;
     background-color: #fff;
     border: solid 1px #fff; }
+  .construction-progress .project-news__news-link {
+    margin: 0 auto 0 20px;
+    border: solid 1px #1e3751;
+    color: #1e3751;
+    -webkit-transition: color 0.6s ease, background-color 0.6s ease;
+    -o-transition: color 0.6s ease, background-color 0.6s ease;
+    transition: color 0.6s ease, background-color 0.6s ease; }
+  .construction-progress .project-news__news-link:hover {
+    color: #fff;
+    background-color: #1e3751;
+    border: solid 1px #1e3751; }
   .location__title {
     font-size: 26px;
     text-align: left;
@@ -3231,10 +3254,12 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
     padding-left: 20px; }
   .upper-slaider__container {
     min-height: 0px; }
+  .attention-details__block-title, .attention-details__block-sub-title {
+    width: 200px; }
   .stock__link {
     margin: 0 auto 0 20px; }
-  .infrastructure__map {
-    height: 380px; }
+  .about-complex {
+    padding-top: 50px; }
   .about-complex-slaider__container {
     position: relative;
     height: 55vw; }
@@ -3408,8 +3433,6 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
     width: 100%; }
   .sixth-block {
     width: 100%; }
-  .attention-details__block.hovered:hover {
-    background-size: 130%; }
   .attention-details__block-wrap {
     -webkit-flex-basis: 100%;
         -ms-flex-preferred-size: 100%;
@@ -3983,8 +4006,10 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
     height: 480px; }
   .upper-slaider__container {
     min-height: 800px; }
-  .attention-details__block.hovered:hover {
-    background-size: 110%; }
+  .attention-details__block-title, .attention-details__block-sub-title {
+    width: 160px; }
+  .about-complex {
+    padding-top: 80px; }
   .about-complex-slaider__container {
     position: relative;
     height: 584px; }

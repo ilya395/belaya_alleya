@@ -14,6 +14,7 @@
 	<script src="js/libs.min.js"></script>
 	<script src="js/common.js"></script>
 	<script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+	<!-- <script src="libs/touch/jquery.touchSwipe.min.js"></script> -->
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.3/lottie_svg.min.js"></script> -->
 </head>
 <body class="body-project">
@@ -189,10 +190,10 @@
 
 							<div class="about-complex-slaider__control-arrows">
 								<div class="about-complex-slaider__control-arrow control-arrow_left">
-									<img src="/img/Left_Arrow_Copy_3.svg" alt="arrow-left" class="about-complex-slaider__arrow-left">
+									<img src="/img/Left_Arrow_Copy_3.svg" alt="arrow-left" class="about-complex-slaider__arrow about-complex-slaider__arrow-left">
 								</div>
 								<div class="about-complex-slaider__control-arrow control-arrow_right">
-									<img src="/img/Right_Arrow_Copy_4.svg" alt="arrow-right" class="about-complex-slaider__arrow-right">
+									<img src="/img/Right_Arrow_Copy_4.svg" alt="arrow-right" class="about-complex-slaider__arrow about-complex-slaider__arrow-right">
 								</div>
 							</div>
 
@@ -266,79 +267,91 @@
 
 					<div class="attention-details__tab first-tab animated fadeIn">
 
-						<div class="attention-details__block-wrap animated pulse active">
-							<div class="attention-details__block hovered first-block first-tab__first-block">
-								<div class="attention-details__block-info">
-									<div class="attention-details__block-title">
-										Безопасные детские и спортивные площадки
-									</div>
-									<div class="attention-details__block-sub-title">
-										
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="attention-details__block-wrap animated pulse">
-							<div class="attention-details__block hovered second-block first-tab__second-block">
-								<div class="attention-details__block-info">
-									<div class="attention-details__block-title block-title_white">
-										Ландшафтное озеленение
-									</div>
-									<div class="attention-details__block-sub-title">
-										
+						<div class="attention-details__block-wrap active">
+							<div class="attention-details__block-wrap-inner first-block">
+								<div class="attention-details__block hovered first-tab__first-block">
+									<div class="attention-details__block-info">
+										<div class="attention-details__block-title">
+											Безопасные детские и спортивные площадки
+										</div>
+										<div class="attention-details__block-sub-title">
+											
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 
-						<div class="attention-details__block-wrap animated pulse">
-							<div class="attention-details__block hovered third-block first-tab__third-block">
-								<div class="attention-details__block-info">
-									<div class="attention-details__block-title">
-										Собственная прогулочная аллея
-									</div>
-									<div class="attention-details__block-sub-title">
-
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="attention-details__block-wrap animated pulse">
-							<div class="attention-details__block hovered fourth-block first-tab__fourth-block">
-								<div class="attention-details__block-info">
-									<div class="attention-details__block-title">
-										Закрытый двор
-									</div>
-									<div class="attention-details__block-sub-title">
-
+						<div class="attention-details__block-wrap">
+							<div class="attention-details__block-wrap-inner second-block">
+								<div class="attention-details__block hovered first-tab__second-block">
+									<div class="attention-details__block-info">
+										<div class="attention-details__block-title block-title_white">
+											Ландшафтное озеленение
+										</div>
+										<div class="attention-details__block-sub-title">
+											
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 
-						<div class="attention-details__block-wrap animated pulse">
-							<div class="attention-details__block hovered fifth-block first-tab__fifth-block">
-								<div class="attention-details__block-info">
-									<div class="attention-details__block-title">
-										Уникальный дизайнерский фасад
-									</div>
-									<div class="attention-details__block-sub-title">
+						<div class="attention-details__block-wrap">
+							<div class="attention-details__block-wrap-inner third-block">
+								<div class="attention-details__block hovered first-tab__third-block">
+									<div class="attention-details__block-info">
+										<div class="attention-details__block-title">
+											Собственная прогулочная аллея
+										</div>
+										<div class="attention-details__block-sub-title">
 
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 
-						<div class="attention-details__block-wrap animated pulse">
-							<div class="attention-details__block hovered sixth-block first-tab__sixth-block">
-								<div class="attention-details__block-info">
-									<div class="attention-details__block-title">
-										Развитая инфраструктура района
+						<div class="attention-details__block-wrap">
+							<div class="attention-details__block-wrap-inner fourth-block">
+								<div class="attention-details__block hovered first-tab__fourth-block">
+									<div class="attention-details__block-info">
+										<div class="attention-details__block-title">
+											Закрытый двор
+										</div>
+										<div class="attention-details__block-sub-title">
+
+										</div>
 									</div>
-									<div class="attention-details__block-sub-title">
-										
+								</div>
+							</div>
+						</div>
+
+						<div class="attention-details__block-wrap">
+							<div class="attention-details__block-wrap-inner fifth-block">
+								<div class="attention-details__block hovered first-tab__fifth-block">
+									<div class="attention-details__block-info">
+										<div class="attention-details__block-title">
+											Уникальный дизайнерский фасад
+										</div>
+										<div class="attention-details__block-sub-title">
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="attention-details__block-wrap">
+							<div class="attention-details__block-wrap-inner sixth-block">
+								<div class="attention-details__block hovered first-tab__sixth-block">
+									<div class="attention-details__block-info">
+										<div class="attention-details__block-title">
+											Развитая инфраструктура района
+										</div>
+										<div class="attention-details__block-sub-title">
+											
+										</div>
 									</div>
 								</div>
 							</div>
@@ -358,81 +371,93 @@
 					<div class="attention-details__tab second-tab active animated fadeIn">
 
 						<div class="attention-details__block-wrap active">
-							<div class="attention-details__block hovered first-block second-tab__first-block">
-								<div class="attention-details__block-info">
-									<div class="attention-details__block-title">
-										Безбарьерная среда
-									</div>
-									<div class="attention-details__block-sub-title">
-										вход в подъезд на одном уровне с тротуаром
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="attention-details__block-wrap animated pulse">
-							<div class="attention-details__block hovered second-block second-tab__second-block">
-								<div class="attention-details__block-info">
-									<div class="attention-details__block-title">
-										Колясочные
-									</div>
-									<div class="attention-details__block-sub-title">
-										на первых этажах
+							<div class="attention-details__block-wrap-inner first-block">
+								<div class="attention-details__block hovered second-tab__first-block">
+									<div class="attention-details__block-info">
+										<div class="attention-details__block-title">
+											Безбарьерная среда
+										</div>
+										<div class="attention-details__block-sub-title">
+											вход в подъезд на одном уровне с тротуаром
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 
-						<div class="attention-details__block-wrap animated pulse">
-							<div class="attention-details__block hovered third-block second-tab__third-block">
-								<div class="attention-details__block-info">
-									<div class="attention-details__block-title">
-										Безбарьерная среда
-									</div>
-									<div class="attention-details__block-sub-title">
-										вход в подъезд на одном уровне с тротуаром
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="attention-details__block-wrap animated pulse">
-							<div class="attention-details__block hovered fourth-block second-tab__fourth-block">
-								<div class="attention-details__block-info">
-									<div class="attention-details__block-title">
-										Планировки
-									</div>
-									<div class="attention-details__block-sub-title">
-										эргономичные и функциональные
-									</div>
-									<a href="#" class="attention-details__block-link">
-										Выбор планировок →
-									</a>
-								</div>
-							</div>
-						</div>
-
-						<div class="attention-details__block-wrap animated pulse">
-							<div class="attention-details__block hovered fifth-block second-tab__fifth-block">
-								<div class="attention-details__block-info">
-									<div class="attention-details__block-title">
-										Увеличенные оконные проемы
-									</div>
-									<div class="attention-details__block-sub-title">
-										с системой безопасности для детей
+						<div class="attention-details__block-wrap">
+							<div class="attention-details__block-wrap-inner second-block">
+								<div class="attention-details__block hovered second-tab__second-block">
+									<div class="attention-details__block-info">
+										<div class="attention-details__block-title">
+											Колясочные
+										</div>
+										<div class="attention-details__block-sub-title">
+											на первых этажах
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 
-						<div class="attention-details__block-wrap animated pulse">
-							<div class="attention-details__block hovered sixth-block second-tab__sixth-block">
-								<div class="attention-details__block-info">
-									<div class="attention-details__block-title">
-										Радиаторы
+						<div class="attention-details__block-wrap">
+							<div class="attention-details__block-wrap-inner third-block">
+								<div class="attention-details__block hovered second-tab__third-block">
+									<div class="attention-details__block-info">
+										<div class="attention-details__block-title">
+											Безбарьерная среда
+										</div>
+										<div class="attention-details__block-sub-title">
+											вход в подъезд на одном уровне с тротуаром
+										</div>
 									</div>
-									<div class="attention-details__block-sub-title">
-										Индивидуальное отопление
+								</div>
+							</div>
+						</div>
+
+						<div class="attention-details__block-wrap">
+							<div class="attention-details__block-wrap-inner fourth-block">
+								<div class="attention-details__block hovered second-tab__fourth-block">
+									<div class="attention-details__block-info">
+										<div class="attention-details__block-title">
+											Планировки
+										</div>
+										<div class="attention-details__block-sub-title">
+											эргономичные и функциональные
+										</div>
+										<a href="#" class="attention-details__block-link">
+											Выбор планировок →
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="attention-details__block-wrap">
+							<div class="attention-details__block-wrap-inner fifth-block">
+								<div class="attention-details__block hovered second-tab__fifth-block">
+									<div class="attention-details__block-info">
+										<div class="attention-details__block-title">
+											Увеличенные оконные проемы
+										</div>
+										<div class="attention-details__block-sub-title">
+											с системой безопасности для детей
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="attention-details__block-wrap">
+							<div class="attention-details__block-wrap-inner sixth-block">
+								<div class="attention-details__block hovered second-tab__sixth-block">
+									<div class="attention-details__block-info">
+										<div class="attention-details__block-title">
+											Радиаторы
+										</div>
+										<div class="attention-details__block-sub-title">
+											Индивидуальное отопление
+										</div>
 									</div>
 								</div>
 							</div>

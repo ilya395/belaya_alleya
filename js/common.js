@@ -385,7 +385,7 @@ $(window).on('load', function() {
 		};
 
 
-	    if (window.matchMedia('(max-width: 577px)').matches) {
+	    if (window.matchMedia('(max-width: 577px)').matches){
 
 			// новостной слайдер
 			function secondSlaiderForNews() {
@@ -650,7 +650,39 @@ $(window).on('load', function() {
 			};
 			var startConstructionProgressSlaider = сonstructionProgressSlaider();
 
-	    };
+			// омг, свайп
+			// if($('.attention-details__block-wrap')){
+				// $('.attention-details__tab.second-tab').swipe( {
+				//     swipeStatus:function(event, phase, direction, distance, duration, fingerCount, fingerData, currentDirection){
+				//         // if (phase=="start"){
+				//         //     // сработает в начале swipe
+				//         // } 
+				//         console.log('вкл');
+				//         if (phase=="end"){ 
+				//             //сработает через 20 пикселей то число которое выбрали в threshold
+				//             if (direction == 'left') {
+				//                 //сработает при движении влево
+				//                 console.log('лево');
+				//             }
+				//             if (direction == 'right') {
+				//                 //сработает при движении вправо
+				//                 console.log('право');
+				//             }
+				//             // if (direction == 'up') {
+				//             //     //сработает при движении вверх
+				//             // }
+				//             // if (direction == 'down') {
+				//             //     //сработает при движении вниз
+				//             // }
+			 //            }
+			 // 		},
+				// 	triggerOnTouchEnd:false,
+				// 	threshold:20 // сработает через 20 пикселей
 
+		  //   	} );
+
+			// };
+
+	  	};
 	});
 });
