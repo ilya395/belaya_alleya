@@ -665,6 +665,369 @@ body {
 .single-new__info-description {
   margin-bottom: 49px; }
 
+.main-form {
+  width: 100%;
+  background-color: #142b42;
+  padding-top: 94px;
+  padding-bottom: 130px; }
+
+.main-form__title {
+  font-family: Montserrat;
+  font-size: 34px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-bottom: 65px; }
+
+.main-form__form {
+  width: 276px;
+  margin: 0 auto;
+  position: relative; }
+
+.main-form__line-wrap {
+  width: 100%;
+  margin-bottom: 20px; }
+
+.main-form__phone {
+  width: 100%;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: 2.63px;
+  text-align: center;
+  color: #ffffff;
+  border-style: none none solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #c59b6e;
+  background-color: transparent;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  text-transform: uppercase; }
+
+.main-form__agreement {
+  margin-bottom: 36px; }
+
+.agreement__check-box-text {
+  position: relative; }
+
+.agreement__check-box-text, .agreement__warn {
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #9b9b9b;
+  margin-left: 32px; }
+
+.agreement__check-box-text {
+  cursor: pointer; }
+
+input[type=checkbox].agreement__check-box {
+  display: none; }
+
+.agreement__check-box-text:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 1px;
+  background-color: #f1f1f1;
+  top: 8px;
+  left: -32px; }
+
+input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:before {
+  content: "\2714";
+  color: #211f29;
+  font-size: 17px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 16px; }
+
+.main-form__button {
+  border-radius: 25px;
+  background-color: #c59b6e;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #ffffff;
+  width: 220px;
+  height: 50px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  display: block;
+  border: 1px solid #c59b6e;
+  -webkit-transition: border 0.6s ease, background-color 0.6s ease, color 0.6s ease;
+  -o-transition: border 0.6s ease, background-color 0.6s ease, color 0.6s ease;
+  transition: border 0.6s ease, background-color 0.6s ease, color 0.6s ease; }
+
+.main-form__button:hover {
+  border: 1px solid #c59b6e;
+  background-color: transparent;
+  color: #fff; }
+
+.payment-option {
+  padding-top: 40px;
+  padding-bottom: 70px; }
+
+.payment-option__title {
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.17;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000; }
+
+.about-banks__container.container {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 61px;
+  position: relative; }
+
+.payment-option__info-title {
+  font-family: Montserrat;
+  font-size: 26px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000; }
+
+.payment-option__info-description {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #000000;
+  margin-top: 14px; }
+
+.payment-option__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #d4d4d4;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.payment-option__row.not-border-bottom-plz {
+  border-bottom: none;
+  padding-bottom: 0px; }
+
+.payment-option__info-image {
+  width: 100%;
+  height: 100%; }
+
+.payment-option__info-icon {
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+  -webkit-flex-basis: 20%;
+      -ms-flex-preferred-size: 20%;
+          flex-basis: 20%;
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0; }
+
+.payment-option__info-offer {
+  -webkit-flex-basis: 80%;
+      -ms-flex-preferred-size: 80%;
+          flex-basis: 80%;
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0; }
+
+.about-banks__title {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #000000;
+  margin-top: 18px;
+  margin-left: 20%; }
+
+.about-banks__item-image {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: 0 auto; }
+
+.about-banks__item-image.vtb {
+  margin-left: 25px; }
+
+.about-banks__item {
+  margin-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.about-banks__item-wrap {
+  border: solid 1px #d4d4d4;
+  padding: 46px 35px 25px 35px;
+  height: 250px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.about-banks__item-title {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000; }
+
+.about-banks__item-sub-title {
+  font-family: Montserrat;
+  font-size: 26px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000; }
+
+.about-banks__row {
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.documents-list {
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 108px; }
+
+.documents-list__title {
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.17;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 20px; }
+
+.documents-list__item-row {
+  padding-top: 49px;
+  padding-bottom: 37px;
+  border-bottom: solid 1px #d4d4d4; }
+
+.documents-list__item-title {
+  font-family: Montserrat;
+  font-size: 26px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  margin-bottom: 9px; }
+
+.documents-list__item-date {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  color: #000000; }
+
+.documents-list__item-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse; }
+
+.documents-list__item-link {
+  width: 173px;
+  height: 50px;
+  border-radius: 25px;
+  border: solid 1px #1e3751;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #1e3751;
+  text-decoration: none;
+  padding: 17px 0px;
+  background-color: transparent;
+  -webkit-transition: color 0.6s ease, background-color 0.6s ease;
+  -o-transition: color 0.6s ease, background-color 0.6s ease;
+  transition: color 0.6s ease, background-color 0.6s ease; }
+
+.documents-list__item-link.hovered:hover {
+  background-color: #1e3751;
+  color: #fff; }
+
 @media (max-width: 320px) {
   .body-project {
     min-width: 320px; }
@@ -769,7 +1132,98 @@ body {
     -webkit-box-direction: reverse;
     -webkit-flex-direction: column-reverse;
         -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse; } }
+            flex-direction: column-reverse; }
+  .main-form__title.work-area_korrection {
+    padding-left: 20px;
+    padding-right: 20px; }
+  .main-form__title {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 40px;
+    font-size: 18px; }
+  .main-form {
+    padding-top: 32px;
+    padding-bottom: 50px; }
+  .payment-option__title {
+    font-size: 26px;
+    text-align: left; }
+  .payment-option__info-icon {
+    width: 35px;
+    height: 35px; }
+  .payment-option__row {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .payment-option__info-icon {
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+    margin-bottom: 15px; }
+  .payment-option__info-image {
+    width: auto; }
+  .payment-option__info-offer {
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%; }
+  .payment-option__row {
+    padding-top: 29px;
+    padding-bottom: 21px; }
+  .payment-option__info-title {
+    font-size: 18px; }
+  .payment-option__info-description {
+    font-size: 15px;
+    margin-top: 5px; }
+  .about-banks__title {
+    margin-left: 0%; }
+  .about-banks__container.container {
+    padding-top: 40px; }
+  .payment-option {
+    padding-bottom: 50px; }
+  .about-banks__control {
+    width: 100%;
+    display: block;
+    position: absolute;
+    margin-left: 15px;
+    margin-right: 15px;
+    bottom: -35px; }
+  .about-banks__control-arrows {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .about-banks__control-arrow {
+    font-size: 60px;
+    cursor: pointer; }
+  .about-banks__item {
+    display: none; }
+  .about-banks__item.active {
+    display: block; }
+  .documents-list {
+    padding-top: 43px;
+    padding-bottom: 76px; }
+  .documents-list__title {
+    font-size: 26px; }
+  .documents-list__item-title {
+    font-size: 18px; }
+  .documents-list__item-btn {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+  .documents-list__item-row {
+    padding-top: 25px;
+    padding-bottom: 40px; }
+  .documents-list__item-btn {
+    margin-top: 35px; } }
 
 @media (min-width: 320px) {
   .body-project {
@@ -870,7 +1324,82 @@ body {
     -webkit-box-direction: reverse;
     -webkit-flex-direction: column-reverse;
         -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse; } }
+            flex-direction: column-reverse; }
+  .main-form__title.work-area_korrection {
+    padding-left: 20px;
+    padding-right: 20px; }
+  .main-form__title {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 40px;
+    font-size: 18px; }
+  .main-form {
+    padding-top: 32px;
+    padding-bottom: 50px; }
+  .payment-option__title {
+    font-size: 26px; }
+  .payment-option__title {
+    font-size: 26px;
+    text-align: left; }
+  .payment-option__info-icon {
+    width: 35px;
+    height: 35px; }
+  .payment-option__row {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .payment-option__info-icon {
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+    margin-bottom: 15px; }
+  .payment-option__info-image {
+    width: auto; }
+  .payment-option__info-offer {
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%; }
+  .payment-option__row {
+    padding-top: 29px;
+    padding-bottom: 21px; }
+  .payment-option__info-title {
+    font-size: 18px; }
+  .payment-option__info-description {
+    font-size: 15px;
+    margin-top: 5px; }
+  .about-banks__title {
+    margin-left: 0%; }
+  .about-banks__container.container {
+    padding-top: 40px; }
+  .payment-option {
+    padding-bottom: 50px; }
+  .about-banks__control {
+    width: 100%;
+    display: block;
+    position: absolute;
+    margin-left: 15px;
+    margin-right: 15px;
+    bottom: -35px; }
+  .about-banks__control-arrows {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .about-banks__control-arrow {
+    font-size: 60px;
+    cursor: pointer; }
+  .about-banks__item {
+    display: none; }
+  .about-banks__item.active {
+    display: block; } }
 
 @media (min-width: 576px) {
   .body-project {
@@ -980,4 +1509,70 @@ body {
     -webkit-box-ordinal-group: 1;
     -webkit-order: 0;
         -ms-flex-order: 0;
-            order: 0; } }
+            order: 0; }
+  .main-form__title.work-area_korrection {
+    padding-left: 20px;
+    padding-right: 20px; }
+  .main-form__title {
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 65px;
+    font-size: 34px; }
+  .main-form {
+    padding-top: 94px;
+    padding-bottom: 130px; }
+  .payment-option__title {
+    font-size: 48px;
+    text-align: center; }
+  .payment-option__info-icon {
+    width: 75px;
+    height: 75px; }
+  .payment-option__row {
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap; }
+  .payment-option__info-icon {
+    -webkit-flex-basis: 20%;
+        -ms-flex-preferred-size: 20%;
+            flex-basis: 20%;
+    margin-bottom: 15px; }
+  .payment-option__info-image {
+    width: 100%; }
+  .payment-option__info-offer {
+    -webkit-flex-basis: 80%;
+        -ms-flex-preferred-size: 80%;
+            flex-basis: 80%; }
+  .payment-option__row {
+    padding-top: 60px;
+    padding-bottom: 40px; }
+  .payment-option__info-title {
+    font-size: 26px; }
+  .payment-option__info-description {
+    font-size: 16px;
+    margin-top: 14px; }
+  .about-banks__title {
+    margin-left: 20%; }
+  .about-banks__container.container {
+    padding-top: 61px; }
+  .payment-option {
+    padding-bottom: 70px; }
+  .about-banks__control {
+    display: none; }
+  .documents-list {
+    padding-top: 40px;
+    padding-bottom: 108px; }
+  .documents-list__title {
+    font-size: 48px; }
+  .documents-list__item-title {
+    font-size: 26px; }
+  .documents-list__item-btn {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse; }
+  .documents-list__item-row {
+    padding-top: 49px;
+    padding-bottom: 37px; }
+  .documents-list__item-btn {
+    margin-top: 0px; } }

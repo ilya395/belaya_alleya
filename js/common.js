@@ -246,110 +246,114 @@ $(window).on('load', function() {
 		});
 
 		// map
-	    var map;
+		if($('.body-project').is('.infrastructure__map')){
+			console.log('Оно есть!');
+		    var map;
 
-		DG.then(function () {
-		    map = DG.map('map', {
-		        center: [55.93, 49.31],
-		        zoom: 14
-		    });
+			DG.then(function () {
+			    map = DG.map('map', {
+			        center: [55.93, 49.31],
+			        zoom: 14
+			    });
 
-	    	DG.marker([55.937821, 49.307848]).addTo(map).bindPopup('Экосад Hi-гора');
-	    	DG.marker([55.937403, 49.306126]).addTo(map).bindPopup('Рябинушка');
-	    	DG.marker([55.935393, 49.307714]).addTo(map).bindPopup('ART KIDS');
-	    	DG.marker([55.929704, 49.293906]).addTo(map).bindPopup('Тургай');
+		    	DG.marker([55.937821, 49.307848]).addTo(map).bindPopup('Экосад Hi-гора');
+		    	DG.marker([55.937403, 49.306126]).addTo(map).bindPopup('Рябинушка');
+		    	DG.marker([55.935393, 49.307714]).addTo(map).bindPopup('ART KIDS');
+		    	DG.marker([55.929704, 49.293906]).addTo(map).bindPopup('Тургай');
 
-	    	DG.marker([55.934179, 49.304013]).addTo(map).bindPopup('Таттехмедфарм');
-	    	DG.marker([55.936553, 49.303095]).addTo(map).bindPopup('Таттехмедфарм');
-	    	DG.marker([55.936682, 49.303701]).addTo(map).bindPopup('Шалфей');
-	    	DG.marker([55.933488, 49.306577]).addTo(map).bindPopup('Апрель');
-	    	DG.marker([55.932358, 49.30744]).addTo(map).bindPopup('Вита Экспресс');
+		    	DG.marker([55.934179, 49.304013]).addTo(map).bindPopup('Таттехмедфарм');
+		    	DG.marker([55.936553, 49.303095]).addTo(map).bindPopup('Таттехмедфарм');
+		    	DG.marker([55.936682, 49.303701]).addTo(map).bindPopup('Шалфей');
+		    	DG.marker([55.933488, 49.306577]).addTo(map).bindPopup('Апрель');
+		    	DG.marker([55.932358, 49.30744]).addTo(map).bindPopup('Вита Экспресс');
 
-	    	DG.marker([55.936514, 49.303787]).addTo(map).bindPopup('Минслу');
-	    	DG.marker([55.935802, 49.299624]).addTo(map).bindPopup('Продуктовый магазин');
-	    	DG.marker([55.933512, 49.306545]).addTo(map).bindPopup('Арыш мае');
-	    	DG.marker([55.932391, 49.308771]).addTo(map).bindPopup('Звениговские колбасы');
-	    	DG.marker([55.932193, 49.308197]).addTo(map).bindPopup('Техас');
-	    	DG.marker([55.932045, 49.308052]).addTo(map).bindPopup('Продуктовый магазин');
-	    	DG.marker([55.931931, 49.307532]).addTo(map).bindPopup('Фабрика качества');
-	    	DG.marker([55.932085, 49.307306]).addTo(map).bindPopup('Пятерочка');
-	    	DG.marker([55.93170, 49.305724]).addTo(map).bindPopup('Магнит');
+		    	DG.marker([55.936514, 49.303787]).addTo(map).bindPopup('Минслу');
+		    	DG.marker([55.935802, 49.299624]).addTo(map).bindPopup('Продуктовый магазин');
+		    	DG.marker([55.933512, 49.306545]).addTo(map).bindPopup('Арыш мае');
+		    	DG.marker([55.932391, 49.308771]).addTo(map).bindPopup('Звениговские колбасы');
+		    	DG.marker([55.932193, 49.308197]).addTo(map).bindPopup('Техас');
+		    	DG.marker([55.932045, 49.308052]).addTo(map).bindPopup('Продуктовый магазин');
+		    	DG.marker([55.931931, 49.307532]).addTo(map).bindPopup('Фабрика качества');
+		    	DG.marker([55.932085, 49.307306]).addTo(map).bindPopup('Пятерочка');
+		    	DG.marker([55.93170, 49.305724]).addTo(map).bindPopup('Магнит');
 
-	    	DG.marker([55.93252, 49.305686]).addTo(map).bindPopup('Cпортивный комплекс');
-	    	DG.marker([55.922771, 49.304967]).addTo(map).bindPopup('Биектау');
+		    	DG.marker([55.93252, 49.305686]).addTo(map).bindPopup('Cпортивный комплекс');
+		    	DG.marker([55.922771, 49.304967]).addTo(map).bindPopup('Биектау');
 
-	    	DG.marker([55.933933, 49.305654]).addTo(map).bindPopup('Сбербанк');
-	    	DG.marker([55.934053, 49.303487]).addTo(map).bindPopup('АК БАРС БАНК');
+		    	DG.marker([55.933933, 49.305654]).addTo(map).bindPopup('Сбербанк');
+		    	DG.marker([55.934053, 49.303487]).addTo(map).bindPopup('АК БАРС БАНК');
 
-		});
+			});
 
-		// детские сады
-		DG.then(function () {
-		    map = DG.map('detsad', {
-		        center: [55.93, 49.31],
-		        zoom: 14
-		    });
+			// детские сады
+			DG.then(function () {
+			    map = DG.map('detsad', {
+			        center: [55.93, 49.31],
+			        zoom: 14
+			    });
 
-	    	DG.marker([55.937821, 49.307848]).addTo(map).bindPopup('Экосад Hi-гора');
-	    	DG.marker([55.937403, 49.306126]).addTo(map).bindPopup('Рябинушка');
-	    	DG.marker([55.935393, 49.307714]).addTo(map).bindPopup('ART KIDS');
-	    	DG.marker([55.929704, 49.293906]).addTo(map).bindPopup('Тургай');
+		    	DG.marker([55.937821, 49.307848]).addTo(map).bindPopup('Экосад Hi-гора');
+		    	DG.marker([55.937403, 49.306126]).addTo(map).bindPopup('Рябинушка');
+		    	DG.marker([55.935393, 49.307714]).addTo(map).bindPopup('ART KIDS');
+		    	DG.marker([55.929704, 49.293906]).addTo(map).bindPopup('Тургай');
 
-		});
-		// аптеки
-		DG.then(function () {
-		    map = DG.map('apteki', {
-		        center: [55.93, 49.31],
-		        zoom: 14
-		    });
+			});
+			// аптеки
+			DG.then(function () {
+			    map = DG.map('apteki', {
+			        center: [55.93, 49.31],
+			        zoom: 14
+			    });
 
-	    	DG.marker([55.934179, 49.304013]).addTo(map).bindPopup('Таттехмедфарм');
-	    	DG.marker([55.936553, 49.303095]).addTo(map).bindPopup('Таттехмедфарм');
-	    	DG.marker([55.936682, 49.303701]).addTo(map).bindPopup('Шалфей');
-	    	DG.marker([55.933488, 49.306577]).addTo(map).bindPopup('Апрель');
-	    	DG.marker([55.932358, 49.30744]).addTo(map).bindPopup('Вита Экспресс');
+		    	DG.marker([55.934179, 49.304013]).addTo(map).bindPopup('Таттехмедфарм');
+		    	DG.marker([55.936553, 49.303095]).addTo(map).bindPopup('Таттехмедфарм');
+		    	DG.marker([55.936682, 49.303701]).addTo(map).bindPopup('Шалфей');
+		    	DG.marker([55.933488, 49.306577]).addTo(map).bindPopup('Апрель');
+		    	DG.marker([55.932358, 49.30744]).addTo(map).bindPopup('Вита Экспресс');
 
-		});
-		// магазины
-		DG.then(function () {
-		    map = DG.map('magazin', {
-		        center: [55.93, 49.31],
-		        zoom: 14
-		    });
+			});
+			// магазины
+			DG.then(function () {
+			    map = DG.map('magazin', {
+			        center: [55.93, 49.31],
+			        zoom: 14
+			    });
 
-	    	DG.marker([55.936514, 49.303787]).addTo(map).bindPopup('Минслу');
-	    	DG.marker([55.935802, 49.299624]).addTo(map).bindPopup('Продуктовый магазин');
-	    	DG.marker([55.933512, 49.306545]).addTo(map).bindPopup('Арыш мае');
-	    	DG.marker([55.932391, 49.308771]).addTo(map).bindPopup('Звениговские колбасы');
-	    	DG.marker([55.932193, 49.308197]).addTo(map).bindPopup('Техас');
-	    	DG.marker([55.932045, 49.308052]).addTo(map).bindPopup('Продуктовый магазин');
-	    	DG.marker([55.931931, 49.307532]).addTo(map).bindPopup('Фабрика качества');
-	    	DG.marker([55.932085, 49.307306]).addTo(map).bindPopup('Пятерочка');
-	    	DG.marker([55.93170, 49.305724]).addTo(map).bindPopup('Магнит');
+		    	DG.marker([55.936514, 49.303787]).addTo(map).bindPopup('Минслу');
+		    	DG.marker([55.935802, 49.299624]).addTo(map).bindPopup('Продуктовый магазин');
+		    	DG.marker([55.933512, 49.306545]).addTo(map).bindPopup('Арыш мае');
+		    	DG.marker([55.932391, 49.308771]).addTo(map).bindPopup('Звениговские колбасы');
+		    	DG.marker([55.932193, 49.308197]).addTo(map).bindPopup('Техас');
+		    	DG.marker([55.932045, 49.308052]).addTo(map).bindPopup('Продуктовый магазин');
+		    	DG.marker([55.931931, 49.307532]).addTo(map).bindPopup('Фабрика качества');
+		    	DG.marker([55.932085, 49.307306]).addTo(map).bindPopup('Пятерочка');
+		    	DG.marker([55.93170, 49.305724]).addTo(map).bindPopup('Магнит');
 
-		});
-		// спорт
-		DG.then(function () {
-		    map = DG.map('sport', {
-		        center: [55.93, 49.31],
-		        zoom: 14
-		    });
+			});
+			// спорт
+			DG.then(function () {
+			    map = DG.map('sport', {
+			        center: [55.93, 49.31],
+			        zoom: 14
+			    });
 
-	    	DG.marker([55.93252, 49.305686]).addTo(map).bindPopup('Cпортивный комплекс');
-	    	DG.marker([55.922771, 49.304967]).addTo(map).bindPopup('Биектау');
+		    	DG.marker([55.93252, 49.305686]).addTo(map).bindPopup('Cпортивный комплекс');
+		    	DG.marker([55.922771, 49.304967]).addTo(map).bindPopup('Биектау');
 
-		});
-		// банки
-		DG.then(function () {
-		    map = DG.map('banks', {
-		        center: [55.93, 49.31],
-		        zoom: 14
-		    });
+			});
+			// банки
+			DG.then(function () {
+			    map = DG.map('banks', {
+			        center: [55.93, 49.31],
+			        zoom: 14
+			    });
 
-	    	DG.marker([55.933933, 49.305654]).addTo(map).bindPopup('Сбербанк');
-	    	DG.marker([55.934053, 49.303487]).addTo(map).bindPopup('АК БАРС БАНК');
+		    	DG.marker([55.933933, 49.305654]).addTo(map).bindPopup('Сбербанк');
+		    	DG.marker([55.934053, 49.303487]).addTo(map).bindPopup('АК БАРС БАНК');
 
-		});
+			});
+		};
+
 		//
 		if($('.infrastructure__map')){
 			$('.infrastructure__button').on('click', function(){
@@ -436,9 +440,9 @@ $(window).on('load', function() {
 					};
 
 					$(slides[slideIndex - 1]).addClass('active');
-					console.log('?');
+					// console.log('?');
 					$(controlDotsItems[slideIndex - 1]).addClass('active');
-					console.log($(slides[slideIndex - 1]));
+					// console.log($(slides[slideIndex - 1]));
 				};
 			};
 			var startSecondSlaiderForNews = secondSlaiderForNews();
@@ -682,6 +686,46 @@ $(window).on('load', function() {
 		  //   	} );
 
 			// };
+
+			//
+			function banksSlaider() {
+
+				// var delay = 4000;
+				// var timerId = setInterval(function currentSlide() {
+				// 	showSlides(slideIndex += 1);
+				// }, delay);
+
+				var slideIndex = 1;
+				
+				var slides = $('.about-banks__item');
+
+				showSlides(slideIndex);
+
+				$('.about-banks__control-arrow.control-arrow_left').on('click', function nextSlide() {
+					showSlides(slideIndex += 1);
+				});
+
+				$('.about-banks__control-arrow.control-arrow_right').on('click', function previousSlide() {
+					showSlides(slideIndex -= 1);
+				});
+
+				function showSlides(n) {
+					var i = 0;
+					// console.log(slides.length);
+					if (n > slides.length) {
+						slideIndex = 1;
+					};
+					if (n < 1) {
+						slideIndex = slides.length;
+					};
+					for (i = 0; i < slides.length; i++) {
+						$(slides[i]).removeClass('active');
+					};
+					$(slides[slideIndex - 1]).addClass('active');
+
+				};
+			};
+			var startBanksSlaider = banksSlaider();
 
 	  	};
 	});
