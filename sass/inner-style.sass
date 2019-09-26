@@ -1,0 +1,989 @@
+/* шрифты */
+@font-face
+	font-family: GothamPro
+	src: url(../fonts/GothamPro/GothamPro-Bold.woff)
+	font-weight: bold
+
+/* simple */
+html
+	box-sizing: border-box
+body
+	margin: 0
+/* /simple */
+.body-project
+	// min-width: 1200px
+.main-container
+	width: 100%
+	margin: 0 auto
+	position: relative
+	overflow: hidden
+
+#before-load
+	width: 100%
+	height: 100%
+	background-color: #142b42
+	position: fixed
+	z-index: 90
+#before-load.not-visible
+	display: none
+#before-load i
+	width: 128px /*ширина gif-изображения*/
+	height: 128px /*высота gif-изображения*/
+	position: absolute
+	left: 50%
+	top: 50%
+	background: url('../img/25.gif') no-repeat 50% 50% /*расположение (url) изображения gif и др. параметры*/
+	margin: -35px 0 0 -35px
+	// z-index: 91
+
+@media (max-width: 320px)
+	#before-load i
+		background-size: 50% 50% 
+		left: calc(50% - 30px)
+@media (min-width: 320px)
+	#before-load i
+		background-size: 100% 100%
+		// margin: 0 auto 
+		left: calc(50% - 30px)
+
+/* upper-slaider */
+.upper-slaider, .inner-page-head
+	width: 100%
+	// height: calc(828px + 106px)
+	// height: 100vh
+	// height: 934px
+	height: auto
+	position: relative
+.upper-slaider__container, .inner-page-head__container
+	width: 100%
+	// max-height: 828px
+	// height: calc(100vh - 106px)
+	// height: auto
+	height: 70px // 100vh
+	position: relative
+	margin:
+		bottom: -4px
+	background-color: #1e3751
+.header-logo__image
+	width: 102px
+	height: 43px
+// .upper-slaider__slaides-list
+// 	width: 100%
+// 	height: calc(100vh - 95px)
+// 	// height: 100%
+// 	position: relative
+// 	overflow: hidden
+// .upper-slaider__slaide
+// 	width: 100%
+// 	height: 100%
+// 	position: absolute
+// 	// display: none
+// 	opacity: 0
+// 	transition: opacity 1000ms ease 0s
+// 	top: 0
+// 	left: 0
+// .upper-slaider__slaide.active
+// 	// display: block
+// 	opacity: 1
+// .upper-first-slaide
+// 	background: url(../img/main_pic_1.jpg) no-repeat center
+// 	background-size: cover
+// .upper-second-slaide
+// 	background: url(../img/main_pic_2.jpg) no-repeat center
+// 	background-size: cover
+// .upper-third-slaide
+// 	background: url(../img/main_pic_3.jpg) no-repeat center
+// 	background-size: cover
+// .upper-slaider__slaide-image
+// 	width: 100%
+// 	height: auto
+// 	// max-height: 828px
+// 	position: relative
+// 	object-fit: cover//contain
+// 	object-position: bottom left
+
+.work-area
+	width: 1080px
+	height: auto
+	margin: 0 auto
+.work-area_korrection
+	padding:
+		left: 70px
+		right: 70px
+.upper-container
+	left: calc((100% - 1080px)/2)
+	top: 0
+	position: absolute
+
+.header-up-line
+	// width: 100%
+	display: flex
+	flex-wrap: nowrap
+	margin:
+		top: 11px
+		bottom: 16px
+.header-menu, .header-logo, .header-phones
+	flex-basis: 33.33333%
+	flex-shrink: 1
+	flex-grow: 0
+.header-menu
+	display: flex
+	flex-wrap: nowrap
+	justify-content: flex-start
+	align-items: center
+	height: 21px
+	align-self: center
+	// padding:
+	// 	left: 70px
+// .header-menu__wrap
+// 	display: block
+// 	width: 100%
+.header-menu__icon
+	width: 24px
+	height: auto
+	display: inline-block
+	position: relative
+.header-menu__icon.active
+	position: absolute
+	z-index: 81
+	top: 20px
+	// left: 20px
+.header-menu__word
+	display: inline-block
+	font-family: GothamPro
+	font-size: 18px
+	font-weight: bold
+	font-style: normal
+	font-stretch: normal
+	line-height: normal
+	letter-spacing: 1.03px
+	color: #ffffff
+	margin:
+		left: 18px
+.header-logo
+	display: flex
+	flex-wrap: nowrap
+	justify-content: center
+.header-phones
+	display: flex
+	flex-wrap: nowrap
+	justify-content: flex-end
+	flex-direction: column
+.header-phones__number
+	font-family: GothamPro
+	font-size: 18px
+	font-weight: bold
+	font-style: normal
+	font-stretch: normal
+	line-height: normal
+	letter-spacing: 0.56px
+	text-align: right
+	color: #ffffff
+	// margin:
+	// 	right: 70px
+.header-phones__callback-link
+	display: inline-block
+	font-family: Montserrat
+	font-size: 14px
+	font-weight: 300
+	font-style: normal
+	font-stretch: normal
+	line-height: normal
+	letter-spacing: normal
+	text-align: right
+	color: #ffffff
+	// margin:
+	// 	right: 70px
+	text-decoration: underline
+.header-phones__callback-icon
+	display: none
+	cursor: pointer
+.callback-icon__image
+	display: block
+	width: 20px
+	height: 20px
+	transform-origin: 50% 50%
+	transform: rotate(45deg)
+	margin:
+		left: auto
+		right: 0px
+
+// .header-middle-line
+// 	// width: 100%
+// 	top: calc(50vh - 150px)
+// 	position: absolute
+// .header-middle-line__title
+// 	height: 138px
+// 	margin-bottom: 47px
+// .header-middle-line__title_main
+// 	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5)
+// 	font-family: Montserrat
+// 	font-size: 67px
+// 	font-weight: 900
+// 	font-style: normal
+// 	font-stretch: normal
+// 	line-height: 1.03
+// 	letter-spacing: normal
+// 	text-align: center
+// 	color: #ffffff
+// 	margin-top: 0px
+// 	margin-bottom: 0px
+// 	display: flex
+// 	align-items: center
+// 	justify-content: center
+// .header-middle-line__title-text
+// 	display: none
+// 	opacity: 0
+// .header-middle-line__title-text.active
+// 	display: block
+// 	opacity: 1
+// .header-middle-line__buttons
+// 	display: flex
+// 	flex-wrap: nowrap
+// 	justify-content: center
+// 	width: 100%
+// .header-middle-line__button-about, .header-middle-line__button-plans
+// 	width: 210px
+// 	// height: 50px
+// 	border-radius: 25px
+// 	border: solid 1px #ffffff
+// 	background-color: transparent
+// 	font-family: Montserrat
+// 	font-size: 12px
+// 	font-weight: bold
+// 	font-style: normal
+// 	font-stretch: normal
+// 	line-height: normal
+// 	letter-spacing: 1px
+// 	text-align: center
+// 	text-transform: uppercase
+// 	color: #ffffff
+// 	text-decoration: none
+// 	padding: 17px 0px
+// 	margin:
+// 		left: 25px
+// 		right: 25px
+// 	transition: background-color 0.6s ease, color 0.6s ease
+// .header-middle-line__button-plans.hovered:hover
+// 	background-color: rgba(255,255,255,0.9)
+// 	color: #1e3751
+// 	// opacity: 0.8
+// .header-middle-line__button-about
+// 	background-color: #fff
+// 	color: #1e3751
+// .header-middle-line__button-about.hovered:hover,
+// 	background-color: transparent
+// 	color: #ffffff
+
+// .details-upper-row
+// 	// width: 100%
+// 	padding:
+// 		top: 22px
+// 		bottom: 24px 
+// 		left: auto
+// 		right: auto
+// 	background-color: #1e3751
+// .details-upper-row
+// 	width: 100%
+// .header-low-line
+// 	// width: 100%
+// 	display: flex
+// 	flex-wrap: nowrap
+// 	// position: absolute
+// 	// top: 100%
+// 	// bottom: 0
+// .header-low-line__blocks
+// 	flex-basis: 33.33333%
+// 	flex-shrink: 1
+// 	flex-grow: 0
+// 	display: flex
+// 	flex-wrap: nowrap
+// 	justify-content: center
+// .header-low-line__image
+// 	width: 100%
+// 	height: 100%
+// .header-low-line__block-info
+// 	margin:
+// 		left: 20px
+// .block-info__title
+// 	font-family: Montserrat
+// 	font-size: 14px
+// 	font-weight: 300
+// 	font-style: normal
+// 	font-stretch: normal
+// 	line-height: 1.64
+// 	letter-spacing: normal
+// 	color: #ffffff
+// .block-info__sub-title
+// 	font-family: Montserrat
+// 	font-size: 16px
+// 	font-weight: 800
+// 	font-style: normal
+// 	font-stretch: normal
+// 	line-height: 1.64
+// 	letter-spacing: normal
+// 	color: #ffffff
+
+/* /upper-slaider */
+
+/* news-catalog */
+.news-catalog
+	width: 100%
+	height: auto
+	background-color: #ffffff
+.catalog-item__image-pic
+	width: 100%
+	height: auto
+.catalog-title
+	font-family: Montserrat
+	font-size: 24px
+	font-weight: normal
+	font-style: normal
+	font-stretch: normal
+	line-height: 1.42
+	letter-spacing: normal
+	color: #000000
+	text-align: left
+	margin-bottom: 22px
+.catalog-row
+	margin-left: -30px
+	margin-right: -30px
+.catalog-item
+	padding-left: 30px
+	padding-right: 30px
+	margin-bottom: 59px
+.catalog-item__image
+	margin-bottom: 20px
+.catalog-item__date
+	font-family: Montserrat
+	font-size: 12px
+	font-weight: bold
+	font-style: normal
+	font-stretch: normal
+	line-height: normal
+	letter-spacing: 0.5px
+	color: #000000
+	text-align: left
+	margin-bottom: 20px
+.catalog-item__title
+	font-family: Montserrat
+	font-size: 26px
+	font-weight: bold
+	font-style: normal
+	font-stretch: normal
+	line-height: normal
+	letter-spacing: normal
+	color: #000000
+	text-align: left
+	margin-bottom: 13px
+.catalog-item__description
+	font-family: Montserrat
+	font-size: 16px
+	font-weight: normal
+	font-style: normal
+	font-stretch: normal
+	line-height: 1.5
+	letter-spacing: normal
+	color: #000000
+	padding-bottom: 14px
+	border-bottom: solid 1px #d4d4d4
+.button-go-back__wrap
+	display: inline-block
+	text-decoration: none
+.button-go-back__icon
+	color: #b6937a
+	font-size: 40px
+	font-weight: 300
+	border: 2px solid #b6937a
+	border-radius: 50%
+	// width: 50%
+	// height: 50
+	padding: 5px 8px
+.button-go-back
+	margin-top: calc(20px + 15px)
+	margin-bottom: calc(29px + 15px)
+/* /news-catalog */
+
+/* call-back */
+.call-back
+	width: 100%
+	background-color: #142b42
+	padding:
+		top: 33px
+		bottom: 82px
+	margin:
+		top: -1px
+
+.call-back__wrap
+	display: flex
+	flex-wrap: nowrap
+	position: relative
+.call-back__block
+	flex-basis: 33.33333%
+	flex-shrink: 1
+	flex-grow: 0
+
+.call-back__office-info
+	padding:
+		left: 54px
+.call-back__social
+	padding:
+		left: 94px
+.call-back__office-title, .call-back__office-description
+	font-family: Montserrat
+	font-size: 14px
+	font-weight: 300
+	font-style: normal
+	font-stretch: normal
+	line-height: normal
+	letter-spacing: normal
+	color: #ffffff
+	margin:
+		bottom: 10px
+.call-back__office-title
+	font-weight: bold
+
+.call-back__social
+	display: flex
+	flex-wrap: nowrap
+	margin:
+		bottom: 12px
+.call-back__social-name
+	font-family: Montserrat
+	font-size: 14px
+	font-weight: 300
+	font-style: normal
+	font-stretch: normal
+	line-height: normal
+	letter-spacing: normal
+	color: #ffffff
+	margin:
+		left: 20px
+	text-decoration: none
+
+.call-back__social-icon
+	width: 25px
+	height: 25px
+.social-icon__image
+	width: 16px
+	height: 16px
+	background-color: #071e35
+	border: 1px solid #071e35
+	border-radius: 50%
+	padding: 3px
+.call-back__social-icon.facebook .social-icon__image
+	width: 14px
+	height: 14px
+
+.call-back__info
+	font-family: Montserrat
+	font-size: 14px
+	font-weight: 300
+	font-style: normal
+	font-stretch: normal
+	line-height: normal
+	letter-spacing: normal
+	text-align: center
+	color: #9b9b9b
+	margin:
+		top: 57px
+		left: 80px + 140px
+		right: 80px + 140px
+
+.line-column
+	position: relative
+.line-column:after, .line-column:before
+	// border-style: none solid none solid
+	// border-left-width: 1px
+	// border-left-color: #979797
+	// border-right-width: 1px
+	// border-right-color: #979797
+	position: absolute
+	content: ""
+	width: 1px
+	height: 115px
+	background-color: #979797
+.line-column:after
+	right: -50px
+	top: 0px
+.line-column:before
+	left: 0
+/* /call-back */
+
+/* main-menu */
+.modal-menu
+	display: none
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: 80
+	background-color: #1e3751
+	overflow: scroll
+.modal-menu__outside
+	margin: auto
+.modal-menu .work-area
+	height: 100%
+
+.modal-menu__wrapper
+	margin: auto 0
+	padding:
+		top: 18px
+.modal-menu.active
+	display: block
+.modal-menu__header
+	display: flex
+	flex-wrap: nowrap
+.modal-menu__header-block
+	flex-basis: 33.33333%
+	flex-shrink: 1
+	flex-grow: 0
+.modal-menu__header-block.phone
+	display: flex
+	flex-wrap: nowrap
+	flex-direction: column
+	justify-content: flex-start
+.modal-menu__header-block.phone .header-phones__number, .modal-menu__header-block.phone .header-phones__callback-link
+	margin-right: 0px
+.modal-menu__header-logo .header-logo__image
+	width: 241.7px
+	height: 105px
+	margin: 0 auto
+	display: block
+
+.modal-menu__lists
+	display: flex
+	flex-wrap: nowrap
+	height: 253px
+	margin:
+		bottom: 82px
+		top: 77px
+.modal-menu__lists-menu
+	flex-basis: 66.66666%
+	flex-shrink: 1
+	flex-grow: 0
+	display: flex
+	flex-direction: column
+	flex-wrap: wrap
+.modal-menu__lists-block
+	flex-basis: 33.33333%
+	flex-shrink: 1
+	flex-grow: 0
+.modal-menu__list-item
+	margin:
+		bottom: 15px
+.modal-menu__item-link
+	font-family: Montserrat
+	font-size: 24px
+	font-weight: 300
+	font-style: normal
+	font-stretch: normal
+	line-height: 1.42
+	letter-spacing: normal
+	color: #ffffff
+	text-decoration: none
+
+// .modal-menu__lists-block
+// 	margin:
+// 		top: 33px
+.modal-menu__lists-block .call-back__social
+	padding-left: 120px
+
+.modal-menu__footer
+	display: flex
+	flex-wrap: nowrap
+	padding:
+		top: 9px
+	justify-content: space-between
+.modal-menu__footer-block
+	flex-basis: 50%
+	flex-shrink: 1
+	flex-grow: 0
+.modal-menu__footer
+	border-top: 1px solid #d4d4d4
+.modal-menu__footer-text
+	font-family: Montserrat
+	font-size: 16px
+	font-weight: 300
+	font-style: normal
+	font-stretch: normal
+	line-height: 1.5
+	letter-spacing: normal
+	color: #d4d4d4
+.modal-menu__footer-block.builder
+	text-align: right
+/* /main-menu */
+
+// single-new
+.single-new__container.container
+	max-width: 1500px
+.single-new__block
+	margin-left: -30px
+	margin-right: -30px
+.single-new__block-inner
+	padding-left: 30px
+	padding-right: 30px
+.single-new__preview
+	width: 100%
+	height: auto
+.single-new__info-date
+	font-family: Montserrat
+	font-size: 12px
+	font-weight: bold
+	font-style: normal
+	font-stretch: normal
+	line-height: normal
+	letter-spacing: 0.5px
+	color: #000000
+	text-align: left
+	margin-bottom: 20px
+.single-new__info-title
+	font-family: Montserrat
+	font-size: 26px
+	font-weight: bold
+	font-style: normal
+	font-stretch: normal
+	line-height: normal
+	letter-spacing: normal
+	color: #000000
+	text-align: left
+	margin-bottom: 13px
+.single-new__info-description, .single-new__info-description p
+	font-family: Montserrat
+	font-size: 16px
+	font-weight: normal
+	font-style: normal
+	font-stretch: normal
+	line-height: 1.5
+	letter-spacing: normal
+	color: #000000
+.single-new__info-description
+	margin-bottom: 49px
+// /single-new
+
+@media (max-width: 320px)
+
+	.body-project
+		min-width: 320px
+
+	.work-area
+		width: 100%
+	.work-area_korrection
+		padding:
+			left: 20px
+			right: 20px
+
+	// upper-slaider
+	.upper-slaider__container
+		min-height: 0px
+
+	.about-complex
+		padding-top: 50px
+	.about-complex-slaider__container
+		position: relative
+		height: 206px
+
+	.header-menu__word
+		display: none
+	.header-phones__callback-icon
+		display: block
+	.header-logo__image
+		width: 102px
+		height: 43px
+	.header-phones__number, .header-phones__callback-link
+		display: none
+	.upper-container
+		left: 0px
+		background-color: #1e3751
+
+	.header-up-line
+		margin:
+			top: 14px
+			bottom: 13px
+		align-items: center
+	// /upper-slaider 
+
+	// /* call-back */
+	.call-back
+		padding-top: 49px
+		padding-bottom: 48px
+	.call-back__wrap
+		flex-wrap: wrap
+	.call-back__block
+		flex-basis: 100%
+	.call-back__info
+		margin-top: 16px
+		margin-left: 0px
+		margin-right: 0px
+	.call-back__social
+		padding-left: 0px
+	.call-back__office-info
+		padding-left: 0px
+	.line-column
+		margin-top: 43px
+		margin-bottom: 15px
+		border-bottom: 1px solid #979797
+	.line-column:after, .line-column:before
+		width: 0px
+	.call-back__block.socials
+		border-bottom: 1px solid #979797
+	// /call-back 
+
+	// main-menu 
+	.modal-menu__header-logo .header-logo__image
+		width: 102px
+		height: 43px
+	.modal-menu__lists
+		flex-wrap: wrap
+		margin-bottom: 33px - 12px
+		margin-top: 18px
+		height: auto
+	.modal-menu__lists-menu
+		flex-basis: 100%
+	.modal-menu__lists-block
+		flex-basis: 100%
+		padding-top: 33px
+		border-top: 1px solid #d4d4d4
+
+	.modal-menu__footer
+		flex-wrap: wrap
+		padding-bottom: 40px
+	.modal-menu__footer-block
+		flex-basis: 100%
+		margin-top: 24px
+	.modal-menu__footer-block.builder
+		text-align: left
+
+	.modal-menu__lists-block .call-back__social
+		padding-left: 0px
+
+	.modal-menu__item-link
+		font-size: 16px
+
+	.modal-menu .header-phones__callback-icon
+		margin-top: 5px
+	// /main-menu 
+
+	// single-new
+	.single-new__block 
+		flex-direction: column-reverse
+	// /single-new
+
+@media (min-width: 320px)
+
+	.body-project
+		min-width: 320px
+
+	.work-area
+		width: 100%
+	.work-area_korrection
+		padding:
+			left: 20px
+			right: 20px
+
+	// upper-slaider
+	.upper-slaider__container
+		min-height: 0px
+
+	.header-menu__word
+		display: none
+	.header-phones__callback-icon
+		display: block
+	.header-logo__image
+		width: 102px
+		height: 43px
+	.header-phones__number, .header-phones__callback-link
+		display: none
+	.upper-container
+		left: 0px
+		background-color: #1e3751
+
+	.header-up-line
+		margin:
+			top: 14px
+			bottom: 13px
+		align-items: center
+	// /upper-slaider
+
+	// call-back
+	.call-back
+		padding-top: 49px
+		padding-bottom: 48px
+	.call-back__wrap
+		flex-wrap: wrap
+	.call-back__block
+		flex-basis: 100%
+	.call-back__info
+		margin-top: 16px
+		margin-left: 0px
+		margin-right: 0px
+	.call-back__social
+		padding-left: 0px
+	.call-back__office-info
+		padding-left: 0px
+	.line-column
+		margin-top: 43px
+		margin-bottom: 15px
+		border-bottom: 1px solid #979797
+	.line-column:after, .line-column:before
+		width: 0px
+	.call-back__block.socials
+		border-bottom: 1px solid #979797
+	// /call-back
+
+	// main-menu
+	.modal-menu__header-logo .header-logo__image
+		width: 102px
+		height: 43px
+	.modal-menu__lists
+		flex-wrap: wrap
+		margin-bottom: 33px - 12px
+		margin-top: 18px
+		height: auto
+	.modal-menu__lists-menu
+		flex-basis: 100%
+	.modal-menu__lists-block
+		flex-basis: 100%
+		padding-top: 33px
+		border-top: 1px solid #d4d4d4
+
+	.modal-menu__footer
+		flex-wrap: wrap
+		padding-bottom: 40px
+	.modal-menu__footer-block
+		flex-basis: 100%
+		margin-top: 24px
+	.modal-menu__footer-block.builder
+		text-align: left
+
+	.modal-menu__lists-block .call-back__social
+		padding-left: 0px
+
+	.modal-menu__item-link
+		font-size: 16px
+
+	.modal-menu .header-phones__callback-icon
+		margin-top: 5px
+	// /main-menu
+
+	// single-new
+	.single-new__block 
+		flex-direction: column-reverse
+	// /single-new
+
+@media (min-width: 576px)
+
+	.body-project
+		min-width: 1200px
+
+	.work-area
+		width: 1080px
+	.work-area_korrection
+		padding:
+			left: 70px
+			right: 70px
+
+	.catalog.container 
+		max-width: 1500px
+
+	// upper-slaider
+	.upper-slaider__container
+		min-height: 0px
+
+	.header-menu__word
+		display: inline-block
+	.header-phones__callback-icon
+		display: none
+	.header-logo__image
+		width: 100%
+		height: auto
+		max-width: 102px
+		max-height: 43px
+	.header-phones__number
+		display: block
+	.header-phones__callback-link
+		display: inline-block
+	.upper-container
+		left: calc((100% - 1080px)/2)
+		background-color: transparent
+
+	.header-up-line
+		margin:
+			top: 11px
+			bottom: 16px
+	.block-info__sub-title
+		font-size: 16px
+
+	// /upper-slaider
+
+	// call-back
+	.call-back
+		padding-top: 33px
+		padding-bottom: 82px
+	.call-back__wrap
+		flex-wrap: nowrap
+	.call-back__block
+		flex-basis: 33.33333%
+
+	.call-back__info
+		margin-top: 57px
+		margin-left: 220px
+		margin-right: 220px
+	.call-back__social
+		padding-left: 94px
+	.call-back__office-info
+		padding-left: 54px
+	.line-column
+		margin-top: 0px
+		margin-bottom: 0px
+		border-bottom: none
+	.line-column:after, .line-column:before
+		width: 1px
+	.call-back__block.socials
+		border-bottom: none
+	// /call-back
+
+	// main-menu
+	.modal-menu__header-logo .header-logo__image
+		width: 241.7px
+		height: 105px
+	.modal-menu__lists
+		flex-wrap: nowrap
+		margin-bottom: 82px
+		margin-top: 77px
+		height: 253px
+	.modal-menu__lists-menu
+		flex-basis: 66.66666%
+	.modal-menu__lists-block
+		flex-basis: 33.33333%
+		border-top: none
+
+
+	.modal-menu__footer
+		flex-wrap: nowrap
+		padding-bottom: 0px
+	.modal-menu__footer-block
+		flex-basis: 50%
+		margin-top: 0px
+	.modal-menu__footer-block.builder
+		text-align: right
+
+	.modal-menu__lists-block
+		margin-top: 33px
+	.modal-menu__lists-block .call-back__social
+		padding-left: 120px
+
+	.modal-menu__item-link
+		font-size: 24px
+	// /main-menu
+
+	// single-new
+	.single-new__block 
+		flex-direction: row
+	.single-new__block-inner
+		order: 0
+	// /single-new
+
+
+
