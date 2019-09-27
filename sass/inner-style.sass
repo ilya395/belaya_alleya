@@ -523,18 +523,23 @@ body
 	overflow: scroll
 .modal-menu__outside
 	margin: auto
+	width: 100%
+	background-color: #1e3751
+	padding-bottom: 37px
+	margin: auto
 .modal-menu .work-area
 	height: 100%
 
 .modal-menu__wrapper
 	margin: auto 0
 	padding:
-		top: 18px
+		top: 14px//18px
 .modal-menu.active
 	display: block
 .modal-menu__header
 	display: flex
 	flex-wrap: nowrap
+	align-items: center
 .modal-menu__header-block
 	flex-basis: 33.33333%
 	flex-shrink: 1
@@ -1064,7 +1069,7 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 		font-size: 16px
 
 	.modal-menu .header-phones__callback-icon
-		margin-top: 5px
+		// margin-top: 5px
 	// /main-menu 
 
 	// single-new
@@ -1249,8 +1254,8 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 	.modal-menu__item-link
 		font-size: 16px
 
-	.modal-menu .header-phones__callback-icon
-		margin-top: 5px
+	// .modal-menu .header-phones__callback-icon
+	// 	margin-top: 5px
 	// /main-menu
 
 	// single-new
@@ -1470,7 +1475,7 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 		flex-basis: 20%
 		margin-bottom: 15px
 	.payment-option__info-image
-		width: 100%
+		width: auto
 	.payment-option__info-offer
 		flex-basis: 80%
 	.payment-option__row
@@ -1489,6 +1494,10 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 		padding-bottom: 70px
 	.about-banks__control
 		display: none
+	.about-banks__item
+		display: block
+	.about-banks__item.active
+		display: block
 	// /payment-option
 
 	// documents-list

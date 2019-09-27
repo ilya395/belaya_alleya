@@ -2288,24 +2288,27 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
 /* main-menu */
 .modal-menu {
   display: none;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: 80;
-  background-color: #1e3751;
+  background-color: rgba(0, 0, 0, 0.5);
   overflow: scroll; }
 
 .modal-menu__outside {
-  margin: auto; }
+  margin: auto;
+  width: 100%;
+  background-color: #1e3751;
+  padding-bottom: 37px; }
 
 .modal-menu .work-area {
   height: 100%; }
 
 .modal-menu__wrapper {
   margin: auto 0;
-  padding-top: 18px; }
+  padding-top: 14px; }
 
 .modal-menu.active {
   display: block; }
@@ -2317,7 +2320,11 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
   display: flex;
   -webkit-flex-wrap: nowrap;
       -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap; }
+          flex-wrap: nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .modal-menu__header-block {
   -webkit-flex-basis: 33.33333%;
@@ -3240,9 +3247,7 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
   .modal-menu__lists-block .call-back__social {
     padding-left: 0px; }
   .modal-menu__item-link {
-    font-size: 16px; }
-  .modal-menu .header-phones__callback-icon {
-    margin-top: 5px; } }
+    font-size: 16px; } }
 
 @media (min-width: 320px) {
   .body-project {
@@ -3993,9 +3998,7 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
   .modal-menu__lists-block .call-back__social {
     padding-left: 0px; }
   .modal-menu__item-link {
-    font-size: 16px; }
-  .modal-menu .header-phones__callback-icon {
-    margin-top: 5px; } }
+    font-size: 16px; } }
 
 @media (min-width: 577px) {
   .body-project {

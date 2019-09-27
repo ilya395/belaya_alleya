@@ -42,14 +42,35 @@ $(window).on('load', function() {
 				});
 			});
 		};
-		// alert('Текущая прокрутка сверху: ' + window.pageYOffset);
+
 		// угораем с крестика
-		if($('.modal-menu').hasClass('.active')){
-			window.addEventListener('scroll', function() {
-			  // document.getElementById('showScroll').innerHTML = pageYOffset + 'px';
-			  console.log(window.pageYOffset);
-			});
-		};
+		$('#mainMenu').on('click', function(){
+			console.log('norm');
+			if( $('.modal-menu.active') ){
+				console.log('inner');
+
+				window.addEventListener('scroll', function() {
+					console.log('+2');
+					// document.getElementById('showScroll').innerHTML = pageYOffset + 'px';
+					console.log(document.pageYOffset);
+
+				});
+
+				$('.modal-menu.active').on('scroll', function(){
+					console.log('+3');
+					var a = $('.modal-menu__wrapper').scrollTop();
+					console.log(a);
+				});
+
+				$('.modal-menu.active').on('scroll', function(){
+					console.log('+4');
+					var specBlock = $('.modal-menu__wrapper');
+					var coords = specBlock.getBoundingClientRect();
+					console.log(coords);
+				});
+
+			};
+		});
 
 		// верхний слайдер
 		function upperSlaider() {
