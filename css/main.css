@@ -2502,6 +2502,8 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
   .shahmatka__floor-plan {
     padding-right: 20px;
     padding-left: 20px; }
+  .shahmatka__planirovka {
+    min-height: auto; }
   .stock__link {
     margin: 0 auto 0 20px; }
   .upper-slaider__container {
@@ -3271,6 +3273,8 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
   .shahmatka__floor-plan {
     padding-right: 20px;
     padding-left: 20px; }
+  .shahmatka__planirovka {
+    min-height: auto; }
   .upper-slaider__container {
     min-height: 0px; }
   .attention-details__block-title, .attention-details__block-sub-title {
@@ -4022,6 +4026,8 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
   .shahmatka__floor-plan {
     padding-right: 0px;
     padding-left: 0px; }
+  .shahmatka__planirovka {
+    min-height: 488px; }
   .infrastructure__map {
     height: 480px; }
   .upper-slaider__container {
