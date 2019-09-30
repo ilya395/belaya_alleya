@@ -1062,11 +1062,22 @@ body {
 .shahmatka__planirovka {
   width: 700px;
   height: auto;
-  margin: 0 auto; }
+  margin: 0 auto;
+  min-height: 488px; }
 
 .shahmatka__planirovka-image {
   width: 100%;
-  height: auto; }
+  height: auto;
+  display: none; }
+
+.shahmatka__planirovka-image.active {
+  display: block; }
+
+.planirovka {
+  display: none; }
+
+.planirovka.active {
+  display: block; }
 
 .shahmatka__download-pdf {
   width: 100%; }

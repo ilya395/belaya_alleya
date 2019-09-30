@@ -267,7 +267,7 @@ $(window).on('load', function() {
 		});
 
 		// map
-		if($('.body-project').is('.infrastructure__map')){
+		if( $('section').is('.infrastructure') ){
 			console.log('Оно есть!');
 		    var map;
 
@@ -409,7 +409,107 @@ $(window).on('load', function() {
 			});
 		};
 
+		// планировки
+		function selectPlans(){
+			$('.n-rooms.navigation-row__control-button').on('click', function(){
+				for(var i=0; i< $('.n-rooms.navigation-row__control-button').length; i++){
+					$( $('.n-rooms.navigation-row__control-button')[i] ).removeClass('active');
+				};
+				$(this).addClass('active');
+				var startRoom = putYuorPlans();
+			});
+			$('.n-floor.navigation-row__control-button').on('click', function(){
+				for(var i=0; i< $('.n-floor.navigation-row__control-button').length; i++){
+					$( $('.n-floor.navigation-row__control-button')[i] ).removeClass('active');
+				};
+				$(this).addClass('active');
+				var startFloor = putYuorPlans();
+			});
 
+			var slideIndex = 1;
+			var slides = $('.class-control__slaide-word');
+			showSlides(slideIndex);
+
+			$('.class-control__control-arrow.control-arrow__right').on('click', function nextSlide() {
+				showSlides(slideIndex += 1);
+				var startClass = putYuorPlans();
+			});
+			$('.class-control__control-arrow.control-arrow__left').on('click', function previousSlide() {
+				showSlides(slideIndex -= 1);
+				var startClass = putYuorPlans();
+			});
+
+			function showSlides(n) {
+				var i;
+
+				if (n > slides.length) {
+					slideIndex = 1;
+				}
+				if (n < 1) {
+					slideIndex = slides.length;
+				}
+				for (i = 0; i < slides.length; i++) {
+					$(slides[i]).removeClass('active');
+				}
+				$(slides[slideIndex - 1]).addClass('active');
+
+			};
+///////////////////////////////////////////////////////////////
+			function putYuorPlans(){
+				var n_rooms, n_class, n_floor;
+				//
+				for(var i=0; i < $('.n-rooms.navigation-row__control-button').length; i++){
+					if( $( $('.n-rooms.navigation-row__control-button')[i] ).hasClass('active') ){
+						n_rooms = i+1;
+					};
+				};
+				//
+				for(var j=0; j < $('.n-floor.navigation-row__control-button').length; j++){
+					if( $( $('.n-floor.navigation-row__control-button')[j] ).hasClass('active') ){
+						n_floor = j+1;
+					};
+				};
+				//
+				for(var k=0; k < $('.class-control__slaide-word').length; k++){
+					if( $( $('.class-control__slaide-word')[k] ).hasClass('active') ){
+						n_class = k;
+					};
+				};
+				//
+				// console.log(n_rooms, n_floor, n_class);
+				var startReturnYourPlans = returnYourPlans(n_rooms, n_floor, n_class);
+			};
+///////////////////////////////////////////////////////////////
+			function returnYourPlans(r, f, c){
+				for(var i = 0; i < $('.shahmatka__planirovka-image').length; i++){
+					$( $('.shahmatka__planirovka-image')[i] ).removeClass('active');
+				};
+
+				for(var j = 0; j < $('.planirovka').length; j++){
+					$('.planirovka').removeClass('active');
+				};
+
+				if(c == 0){
+					c = 'standart';
+				} else if(c == 1){
+					c = 'pro';
+				} else if(c == 2){
+					c = 'evro';
+				} else if(c == 3){
+					c = 'evro-plus';
+				};
+				$('.planirovka__' + c).addClass('active');
+				var data_src = $('.planirovka__' + c + ' .n-rooms-' + r + '.n-floor-' + f).attr('data-src');
+				$('.planirovka__' + c + ' .n-rooms-' + r + '.n-floor-' + f).attr('src', data_src);
+				$('.planirovka__' + c + ' .n-rooms-' + r + '.n-floor-' + f).addClass('active');
+
+			};
+
+		};
+
+		var startSelectPlans = selectPlans();
+
+		// мобилки
 	    if (window.matchMedia('(max-width: 577px)').matches){
 
 			// новостной слайдер
@@ -437,7 +537,7 @@ $(window).on('load', function() {
 
 				controlDotsItems.on('click', function currentSlide(n) {
 				    var n = $(this).index() + 1;
-				    console.log(n);
+				    // console.log(n);
 				    showSlides(slideIndex = n);
 				    // clearTimeout(timerId)
 			    });
@@ -453,7 +553,7 @@ $(window).on('load', function() {
 					};
 					for (i = 0; i < slides.length; i++) {
 						$(slides[i]).removeClass('active');
-						console.log('!');
+						// console.log('!');
 					};
 					for (i = 0; i < controlDotsItems.length; i++) {
 						//dots[i].className = dots[i].className.replace("active", "");
@@ -647,7 +747,7 @@ $(window).on('load', function() {
 
 				controlDotsItems.on('click', function currentSlide(n) {
 				    var n = $(this).index() + 1;
-				    console.log(n);
+				    // console.log(n);
 				    showSlides(slideIndex = n);
 				    // clearTimeout(timerId)
 			    });
