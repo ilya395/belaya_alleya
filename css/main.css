@@ -792,6 +792,11 @@ body {
   background-position: 50% 50%;
   margin: -10px 0 0 -10px; }
 
+.attention-details__block.hovered {
+  -webkit-transition: width 0.6s ease, height 0.6s ease;
+  -o-transition: width 0.6s ease, height 0.6s ease;
+  transition: width 0.6s ease, height 0.6s ease; }
+
 .attention-details__block.hovered:hover {
   width: 100%;
   height: 100%;
@@ -1063,15 +1068,32 @@ body {
   width: 700px;
   height: auto;
   margin: 0 auto;
-  min-height: 488px; }
+  min-height: 488px;
+  position: relative; }
+
+.shahmatka__planirovka {
+  position: relative;
+  width: 100%;
+  height: 100%; }
 
 .shahmatka__planirovka-image {
+  position: absolute;
   width: 100%;
   height: auto;
-  display: none; }
+  display: block;
+  opacity: 0;
+  z-index: 9;
+  -webkit-transition: opacity 0.4s linear;
+  -o-transition: opacity 0.4s linear;
+  transition: opacity 0.4s linear; }
 
 .shahmatka__planirovka-image.active {
-  display: block; }
+  opacity: 1;
+  z-index: 10; }
+
+.shahmatka__planirovka-image.default {
+  display: block;
+  position: absolute; }
 
 .planirovka {
   display: none; }
@@ -2503,7 +2525,7 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
     padding-right: 20px;
     padding-left: 20px; }
   .shahmatka__planirovka {
-    min-height: auto; }
+    min-height: 345px; }
   .stock__link {
     margin: 0 auto 0 20px; }
   .upper-slaider__container {
@@ -3274,7 +3296,7 @@ input[type=checkbox].agreement__check-box:checked + .agreement__check-box-text:b
     padding-right: 20px;
     padding-left: 20px; }
   .shahmatka__planirovka {
-    min-height: auto; }
+    min-height: 345px; }
   .upper-slaider__container {
     min-height: 0px; }
   .attention-details__block-title, .attention-details__block-sub-title {
